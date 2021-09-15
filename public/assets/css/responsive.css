@@ -216,33 +216,57 @@
 		align-content: center;
 	}
 
-	.slider-relative > img:nth-child(1) {
+	.mobile-card-wrapper .slider-card1 {
+		background: url('../img/people/aerial-view-hands-working-computer-white-table-office.jpg');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	.mobile-card-wrapper .slider-card2 {
+		background: url('../img/people/christina-wocintechchat-com-4PU-OC8sW98-unsplash.jpg');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	.mobile-card-wrapper .slider-card3 {
+		background: url('../img/people/christina-wocintechchat-com-eF7HN40WbAQ-unsplash.jpg');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	.mobile-card-wrapper > img:nth-child(1) {
 		position: absolute;
 		z-index: 2;
 		bottom: -20px;
-		left: 30px;
+		left: 10px;
 		width: 80px;
 		transform: rotate(150deg);
 	}
 
-	.slider-relative > img:nth-child(2) {
+	.mobile-card-wrapper > img:nth-child(2) {
 		position: absolute;
 		z-index: 2;
 		top: -70px;
-		right: 30px;
+		right: 10px;
 		width: 80px;
 		transform: rotate(-30deg);
 	}
 
 	.slider-card {
-		width: 100%;
-	}
-
-	.slider-card-img {
-		width: 70%;
+		width: 300px;
 		height: 270px;
-		overflow: hidden;
+		position: relative;
+		z-index: 3;
+		background-color: red;
+		border-radius: 50px;
+		-webkit-box-shadow: 0px 0px 20px -7px rgba(0,0,0,0.65);
+		-moz-box-shadow: 0px 0px 20px -7px rgba(0,0,0,0.65);
+		box-shadow: 0px 0px 20px -7px rgba(0,0,0,0.65);
 	}
+	
 
 	.home-carousel {
 		display: none;
@@ -376,6 +400,21 @@
 		padding: 20px 0;
 	}
 
+	.home-first-carousel > h1 {
+		font-size: 1.5em;
+		margin-bottom: 20px;
+	}
+
+	.home-first-carousel {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-flow: column;
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+
 	.home-carousel > h1 {
 		font-size: 1.5em;
 		margin-bottom: 20px;
@@ -412,7 +451,7 @@
 	}
 
 	.cta-btn-carousel button {
-		width: 90%;
+		width: 300px;
 		background-color: #e8491c;
 		color: white;
 		padding: 15px 15px;
@@ -828,5 +867,115 @@
 		font-weight: 200;
 		cursor: pointer;
 		margin: 30px 0;
+	}
+
+	#user-body {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 100px auto;
+		margin-bottom: 100px;
+	}
+
+	.user-container {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-flow: column;
+	}
+
+	.user-profile {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-flow: column;
+		position: relative;
+		height: 750px;
+	}
+
+	.user-messages {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.message-container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-flow: column;
+		width: 100%;
+		height: 550px;
+	}
+
+	.reception h4 {
+		font-weight: 300;
+		font-size: 1.3em;
+		margin-bottom: 50px;
+	}
+
+	.user-details button {
+		width: 100%;
+		background-color: var(--red);
+		color: white;
+		padding: 5px;
+		border-radius: 50px;
+		border: none;
+		font-size: 1.3em;
+		font-weight: 200;
+		cursor: pointer;
+	}
+
+	.mes-formations-card {
+		background-color: white;
+		width: 100%;
+		height: 150px;
+		border-radius: 70px;
+		text-align: left;
+		padding: 20px;
+		padding-left: 30px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin: 10px auto;
+	}
+
+	.mes-formations-card-text h3 {
+		font-weight: 300;
+		font-size: 1.2em;
+	}
+
+	.mes-formations-card-picto {
+		width: 100px;
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+	}
+
+	.mes-formations-card-text p {
+		font-size: 1em;
+		font-weight: 300;
+		margin-top: 10px;
+	}
+
+	.mes-formations-card-picto img {
+		width: 100%;
+	}
+
+	.success-bottom button {
+		width: 300px;
+		background-color: #e8491c;
+		color: white;
+		padding: 15px 15px;
+		border-radius: 50px;
+		border: none;
+		font-size: 1.2em;
+		font-weight: 200;
+		cursor: pointer;
+		margin-top: 20px;
 	}
 }

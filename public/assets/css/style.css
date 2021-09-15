@@ -933,6 +933,12 @@ header {
 	font-size: 1.4em;
 }
 
+.mobile-card-wrapper a {
+	color: #4259a8;
+	font-size: 1.4em;
+	margin-top: 20px;
+}
+
 .cta-btn-carousel a {
 	margin: 30px 0;
 }
@@ -958,6 +964,15 @@ header {
 
 .home2-carousel-slides {
 	display: none;
+}
+
+.mobile-card-wrapper {
+	position: relative;
+	width: fit-content;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column;
 }
 
 .home3-carousel-slides {
@@ -1601,7 +1616,7 @@ header {
 
 .mes-formations-card {
 	background-color: white;
-	width: 60%;
+	width: 70%;
 	height: 150px;
 	border-radius: 70px;
 	text-align: left;
@@ -1616,10 +1631,6 @@ header {
 	box-shadow: 0px 0px 19px -9px rgba(0,0,0,0.75);
 }
 
-.mes-formations-card-text {
-	padding-right: 100px;
-}
-
 .mes-formations-card-text h3 {
 	font-weight: 300;
 	font-size: 1.4em;
@@ -1629,6 +1640,17 @@ header {
 	font-size: 1.3em;
 	font-weight: 300;
 	margin-top: 10px;
+}
+
+.mes-formations-card-picto {
+	width: 150px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.mes-formations-card-picto img {
+	width: 80%;
 }
 
 /* ================================
