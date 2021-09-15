@@ -38,7 +38,7 @@ $stripeInfo = [
 	'formations' =>  $prodName,
 	'dates' => $date
 ];
-echo json_encode($stripeInfo);
+
 $sql = "UPDATE customers SET stripe_id = :stripe_id, formations = :formations, purchased_date = :dates WHERE email = :customer_email";
 $stmt = $pdo->prepare($sql);
 $stmt->execute($stripeInfo);

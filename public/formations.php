@@ -4,8 +4,6 @@
 	$stm = $pdo->query("SELECT * FROM formations");
 	$rows = $stm->fetchall(PDO::FETCH_ASSOC);
 
-	$counter = 0;
-
 	$stm2 = $pdo->query("SELECT * FROM modules_formation_adultes");
 	$rows2 = $stm2->fetchall(PDO::FETCH_ASSOC);
 
@@ -160,6 +158,7 @@ require_once (__DIR__ . '/includes/header.php');
 		</div>
 	</div>
 	<div class="formations-footer">
+		
 		<div class="f-footer-text">
 			<div class="f-footer-text-header">
 				<img src="assets/icons/FLECHE ORANGE.svg" alt="">

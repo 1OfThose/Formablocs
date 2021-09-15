@@ -37,7 +37,7 @@ require_once (__DIR__ . '/includes/header.php');
 		<div class="container">
 			<div class="carousel-container">
 
-				<div class="home-carousel">
+				<div class="home-first-carousel">
 					<h1>Pourquoi choisir Formablocs ?</h1>
 					<div class="finance-carousel-container">
 

@@ -239,7 +239,22 @@ require_once (__DIR__ . '/includes/header.php');
 
 			</div>
 
-			<div class="prestations-bottom"></div>
+			<div class="prestations-bottom">
+				<div class="container">
+					<div class="prestation-bottom-container">
+						<div class="prestations-header">
+							<img src="assets/icons/FLECHE ORANGE.svg" alt="">
+							<h1><span>Accompagnements</span></h1>
+						</div>
+						<h4>40 €/h</h4>
+						<img src="<?=$domain?>/illustrations/ILLUSTRATION PRESTATION 2.svg" alt="Accompagnements">
+						<p>Comment accompagner des personnes en situation de handicap ? Comment organiser mes formations en alternance tout en assurant la mixité des publics ? Comment accompagner le public en reconversion ?</p>
+						<span>Pour toutes ces questions et bien d’autres nous pouvons vous aider.</span>
+						<h5>Contactez nous pour un devis personalisé !</h5>
+						<a href="contact.php" class="red-hover"><button>Nous contacter</button></a>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 </section>
