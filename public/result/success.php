@@ -8,7 +8,6 @@ $dotenv->load();
 
 $secretKey = $_ENV['STRIPE_SECRET_KEY'];
 $stripe = new \Stripe\StripeClient($secretKey);
-
 // ================= RECUPERER ID DE LA SESSION DE PAIEMENT DU CLIENT
 
 $sessionID = $_SESSION['session'];
@@ -21,16 +20,15 @@ $date = $sessionDetails->metadata->date;
 
 $retrievePrice = $stripe->prices->retrieve($priceID,[]);
 $retrieveProd = $retrievePrice->product;
-
 $prodInfo = $stripe->products->retrieve($retrieveProd,[]);
 $prodName = $prodInfo->name;
 
 // ================= RECUPERATION ET CONCATENATION DES INFOS DE LA BDD
 $query_user = $pdo->query("SELECT * FROM customers WHERE email = \"$customerEmail\"");
 $user = $query_user->fetchall(PDO::FETCH_ASSOC);
-$prodName = $prodName. ', '. $user[0]['formations'];
+$prodName = $priceID. ', '. $user[0]['formations'];
 $date = $date. ', '. $user[0]['purchased_date'];
-
+$array_formation = explode(', ',$user[0]['formations']);
 // ================= AJOUTER ID STRIPE CLIENT DANS DATABASE
 $stripeInfo = [
 	'stripe_id' => $customerID,
@@ -38,11 +36,11 @@ $stripeInfo = [
 	'formations' =>  $prodName,
 	'dates' => $date
 ];
-echo json_encode($stripeInfo);
 $sql = "UPDATE customers SET stripe_id = :stripe_id, formations = :formations, purchased_date = :dates WHERE email = :customer_email";
 $stmt = $pdo->prepare($sql);
-$stmt->execute($stripeInfo);
-
+if(!in_array($priceID, $array_formation)){
+	$stmt->execute($stripeInfo);
+}
 
 ?>
 
