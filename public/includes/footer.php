@@ -62,6 +62,6 @@
 	</div>
 </footer>
 
-<script src="/Projet%204/public/assets/js/mobile.js"></script>
+<script src="<?$domain?>/js/mobile.js"></script>
 </body>
 </html>
