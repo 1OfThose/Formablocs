@@ -16,6 +16,7 @@ $dateArray = explode(',', $formationsDate);
 
 $objetFormations = (object) $formationArray;
 $objetDate = (object) $dateArray;
+
 foreach ($formationArray as $price_f) {
     $nomFormation = $pdo->query("SELECT * FROM toutes_formations WHERE price_id = \"$price_f\"");
 	$form = $nomFormation->fetchall(PDO::FETCH_ASSOC);
@@ -48,7 +49,7 @@ require_once (__DIR__ . '/../includes/header.php');
 				<div class="user-img">
 					<img src="<?=$domain?>/img/people/christian-buehner-DItYlc26zVI-unsplash (1).jpg" alt="">
 				</div>
-				<div class="user-details">
+				<div class="user-details red-hover">
 					<h2><?=$loggedIn['name']?></h2>
 					<p>Description de l'utilisateur</p>
 					<ul>
@@ -78,6 +79,7 @@ require_once (__DIR__ . '/../includes/header.php');
 	<div class="container">
 		<div class="mes-formations-container">
 			<h1>Mes formations et accompagnements</h1>
+			<?php if(!empty($formationArray)) { ?>
 			<div class="mes-formations-list">
 
 				<?php foreach($formationArray as $formation) {?>
@@ -92,7 +94,7 @@ require_once (__DIR__ . '/../includes/header.php');
 						</div>
 					</div>
 
-				<?php } ?>
+				<?php } } ?>
 			</div>
 		</div>
 	</div>

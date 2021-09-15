@@ -23,6 +23,7 @@ require_once (__DIR__ . '/includes/header.php');
 				<div class="forum-messages-container">
 
 					<div class="forum-top">
+
 						<span class="dropdown-el">
 							<input type="radio" name="sortType" value="Trier par" checked="checked" id="sort-relevance">
 							<label for="sort-relevance" class="low-opacity">Trier par</label>
@@ -43,6 +44,29 @@ require_once (__DIR__ . '/includes/header.php');
 							<label for="sort-name">Trier par</label>
 
 						</span>
+
+						<span class="dropdown-el">
+							<input type="radio" name="Filtres" value="Filtres" checked="checked" id="Filtres-relevance">
+							<label for="Filtres-relevance" class="low-opacity">Filtres</label>
+
+							<input type="radio" name="Filtres" value="Filtres" id="Filtres-best">
+							<label for="Filtres-best">Filtres</label>
+
+							<input type="radio" name="Filtres" value="Filtres" id="Filtres-low">
+							<label for="Filtres-low">Filtres</label>
+
+							<input type="radio" name="Filtres" value="Filtres" id="Filtres-high">
+							<label for="Filtres-high">Filtres</label>
+
+							<input type="radio" name="Filtres" value="Filtres" id="Filtres-brand">
+							<label for="Filtres-brand">Filtres</label>
+
+							<input type="radio" name="Filtres" value="Filtres" id="Filtres-name">
+							<label for="Filtres-name">Filtres</label>
+
+						</span>
+
+
 					</div>
 
 					<div class="forum-message">

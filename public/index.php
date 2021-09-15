@@ -37,7 +37,7 @@ require_once (__DIR__ . '/includes/header.php');
 		<div class="container">
 			<div class="carousel-container">
 
-				<div class="home-carousel">
+				<div class="home-first-carousel">
 					<h1>Pourquoi choisir Formablocs ?</h1>
 					<div class="finance-carousel-container">
 
@@ -216,29 +216,22 @@ require_once (__DIR__ . '/includes/header.php');
 
 						<div class="mobile-carousel-container">
 
-							<div class="slider-card home3-carousel-slides current-home2-carousel">
-								<div class="slider-card-img">
-									<img src="assets/img/people/aerial-view-hands-working-computer-white-table-office.jpg" alt="">
-								</div>
+							<div class="mobile-card-wrapper home3-carousel-slides current-home2-carousel">
+								<div class="slider-card slider-card1"></div>
 								<a href="#">Digitalisation</a>
 							</div>
 
-							<div class="slider-card slider-relative home3-carousel-slides">
+							<div class="mobile-card-wrapper home3-carousel-slides">
 								<img src="assets/icons/ROND ORANGE.svg" alt="">
 								<img src="assets/icons/ROND ORANGE.svg" alt="">
-								<div class="slider-card-img relative-img">
-									<img src="assets/img/people/christina-wocintechchat-com-4PU-OC8sW98-unsplash.jpg" alt="">
-								</div>
+								<div class="slider-card slider-card2 slider-relative"></div>
 								<a href="#">Qualité</a>
 							</div>
 
-							<div class="slider-card home3-carousel-slides">
-								<div class="slider-card-img">
-									<img src="assets/img/people/christina-wocintechchat-com-eF7HN40WbAQ-unsplash.jpg" alt="">
-								</div>
+							<div class="mobile-card-wrapper home3-carousel-slides">
+								<div class="slider-card slider-card3"></div>
 								<a href="#">RNCP</a>
 							</div>
-							
 
 						</div>
 
@@ -251,7 +244,7 @@ require_once (__DIR__ . '/includes/header.php');
 			</div>
 			
 			<div class="cta-btn-carousel">
-				<a href="#" class="red-hover"><button>Découvrir nos prestations</button></a>
+				<a href="prestations.php" class="red-hover"><button>Découvrir nos prestations</button></a>
 			</div>
 		</div>
 

@@ -18,7 +18,7 @@ html {
 
 body {
 	width: 100%;
-/* 	overflow-x: hidden; */
+    overflow-x: hidden;
 	margin: 0;
 	font-family: "Poppins", sans-serif;
 	-webkit-font-smoothing: antialiased;
@@ -695,7 +695,16 @@ header {
 	padding-top: 30px;
 }
 
-.home-carousel > h1 {
+.home-first-carousel {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column;
+	padding-top: 30px;
+}
+
+.home-first-carousel > h1 {
 	font-size: 2em;
 }
 
@@ -924,6 +933,12 @@ header {
 	font-size: 1.4em;
 }
 
+.mobile-card-wrapper a {
+	color: #4259a8;
+	font-size: 1.4em;
+	margin-top: 20px;
+}
+
 .cta-btn-carousel a {
 	margin: 30px 0;
 }
@@ -949,6 +964,15 @@ header {
 
 .home2-carousel-slides {
 	display: none;
+}
+
+.mobile-card-wrapper {
+	position: relative;
+	width: fit-content;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column;
 }
 
 .home3-carousel-slides {
@@ -1592,7 +1616,7 @@ header {
 
 .mes-formations-card {
 	background-color: white;
-	width: 60%;
+	width: 70%;
 	height: 150px;
 	border-radius: 70px;
 	text-align: left;
@@ -1607,10 +1631,6 @@ header {
 	box-shadow: 0px 0px 19px -9px rgba(0,0,0,0.75);
 }
 
-.mes-formations-card-text {
-	padding-right: 100px;
-}
-
 .mes-formations-card-text h3 {
 	font-weight: 300;
 	font-size: 1.4em;
@@ -1620,6 +1640,17 @@ header {
 	font-size: 1.3em;
 	font-weight: 300;
 	margin-top: 10px;
+}
+
+.mes-formations-card-picto {
+	width: 150px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.mes-formations-card-picto img {
+	width: 80%;
 }
 
 /* ================================
@@ -1799,6 +1830,10 @@ header {
 	box-shadow: 0px 0px 25px -14px rgba(0,0,0,0.75);
 }
 
+.dropdown-el:nth-child(2) {
+	display: none;
+}
+
 .dropdown-el input:focus + label {
 	background: #def;
 }
@@ -1955,7 +1990,7 @@ header {
 .forum-user-message img {
 	position: absolute;
 	right: -25px;
-	top: 40px;
+	top: 45px;
 	width: 50px;
 	cursor: pointer;
 }
@@ -2814,7 +2849,7 @@ header {
 }
 
 .module-active {
-	max-height: 1000px;
+	max-height: 1500px;
 	margin: 30px 0;
 }
 
@@ -2836,6 +2871,9 @@ header {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+.card-btns form.already_purchased {
+	width: 100%;
 }
 
 .card-btns form button {
@@ -3120,4 +3158,68 @@ header {
 
 .hidden-slide {
 	display: none;
+}
+
+.prestations-bottom {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+
+.prestation-bottom-container {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	flex-flow: column;
+	text-align: center;
+}
+
+.prestation-bottom-container .prestations-header {
+	margin-bottom: 30px;
+}
+
+.prestation-bottom-container > h4 {
+	color: var(--red);
+	font-weight: 300;
+	font-size: 1.6em;
+}
+
+.prestation-bottom-container > img {
+	width: 28%;
+	margin: 40px 0;
+	align-self: center;
+	justify-self: center;
+}
+
+.prestation-bottom-container > p {
+	font-size: 1.4em;
+}
+
+.prestation-bottom-container > span {
+	font-size: 1.3em;
+	margin: 40px 0;
+	color: rgb(48, 143, 216);
+}
+
+.prestation-bottom-container > h5 {
+	font-size: 1.4em;
+	font-weight: 600;
+}
+
+.prestation-bottom-container > a {
+	margin: 40px auto;
+}
+
+.prestation-bottom-container > a button {
+	width: 420px;
+	background-color: #e8491c;
+	color: white;
+	padding: 10px 10px;
+	border-radius: 50px;
+	border: none;
+	font-size: 1.4em;
+	font-weight: 200;
+	cursor: pointer;
 }
