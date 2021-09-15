@@ -1808,7 +1808,7 @@ header {
 	box-shadow: 0px 0px 25px -14px rgba(0,0,0,0.75);
 }
 
-.dropdown-el2 {
+.dropdown-el:nth-child(2) {
 	display: none;
 }
 
@@ -1968,7 +1968,7 @@ header {
 .forum-user-message img {
 	position: absolute;
 	right: -25px;
-	top: 40px;
+	top: 45px;
 	width: 50px;
 	cursor: pointer;
 }
@@ -2849,6 +2849,9 @@ header {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+.card-btns form.already_purchased {
+	width: 100%;
 }
 
 .card-btns form button {
