@@ -1,5 +1,10 @@
 <?php
-session_start();
+if(empty(session_id())){
+    session_start();
+} else {
+    session_write_close();
+    session_regenerate_id(true);
+}
 
 require_once (__DIR__ . '/global.php');
 

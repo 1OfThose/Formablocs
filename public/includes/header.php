@@ -1,6 +1,6 @@
 <?php
 
-$domain = '/Projet%204/public/assets';
+$domain = 'https://forma.blocs.christopher-gauthier.com/public/assets';
 require_once (__DIR__ . '../../db/global_db.php');
 
 ?>

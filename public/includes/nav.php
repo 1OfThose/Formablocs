@@ -41,11 +41,11 @@
 			</div>
 			<div class="navlinks">
 				<ul class="navlist">
-					<li class="linko"><a href="<?=$domain?>/../formations.php">Nos formations</a></li>
-					<li class="linko"><a href="<?=$domain?>/../prestations.php">Nos prestations de conseil</a></li>
-					<li class="linko"><a href="<?=$domain?>/../financement.php">Financement</a></li>
-					<li class="linko"><a href="<?=$domain?>/../contact.php">Contact</a></li>
-					<li class="linko"><a href="<?=$domain?>/../forum.php">Forum</a></li>
+					<li class="linko"><a href="<?=$domain?>/../formations.php" class="underline">Nos formations</a></li>
+					<li class="linko"><a href="<?=$domain?>/../prestations.php" class="underline">Nos prestations de conseil</a></li>
+					<li class="linko"><a href="<?=$domain?>/../financement.php" class="underline">Financement</a></li>
+					<li class="linko"><a href="<?=$domain?>/../contact.php" class="underline">Contact</a></li>
+					<li class="linko"><a href="<?=$domain?>/../forum.php" class="underline">Forum</a></li>
 				</ul>
 			</div>
 		</div>

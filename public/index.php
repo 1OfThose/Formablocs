@@ -109,21 +109,19 @@ require_once (__DIR__ . '/includes/header.php');
 				<h1>Nos formations</h1>
 			</div>
 			<div class="categories-formations">
-				<div class="formations-card-home">
-					<img src="assets/icons/ROND ORANGE.svg" alt="">
-					<div class="card-img-container">
-						<img src="assets/img/people/PHOTO-ACCUEIL-1.jpg" alt="">
-					</div>
+
+				<div class="formation-card-wrapper">
+					<img src="assets/icons/ROND-ORANGE.png" alt="">
+					<div class="formations-card-home fch1"></div>
 					<a href="#">Formateur Professionnel <br> d'Adultes (bac+2)</a>
 				</div>
 
-				<div class="formations-card-home">
-					<img src="assets/icons/ROND ORANGE.svg" alt="">
-					<div class="card-img-container">
-						<img src="assets/img/people/PHOTO-ACCUEIL-2.jpg" alt="">
-					</div>
+				<div class="formation-card-wrapper">
+					<img src="assets/icons/ROND-ORANGE.png" alt="">
+					<div class="formations-card-home fch2"></div>
 					<a href="#">Conseiller en Insertion <br> Professionnelle (bac+2)</a>
 				</div>
+
 			</div>
 			<div class="cta-btn-home">
 				<a href="#" class="red-hover"><button>Découvrir nos formations</button></a>
