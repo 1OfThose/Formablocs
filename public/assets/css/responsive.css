@@ -59,7 +59,7 @@
 		flex-flow: column;
 		background-color: white;
 		transition: all .4s ease;
-		padding-right: 50px;
+		padding-right: 30px;
 	}
 
 	.navlist {
@@ -71,7 +71,7 @@
 
 	.navlist li {
 		margin: 30px 0;
-		font-size: 1.2em;
+		font-size: 1.1em;
 		text-align: right;
 	}
 
@@ -240,8 +240,8 @@
 	.mobile-card-wrapper > img:nth-child(1) {
 		position: absolute;
 		z-index: 2;
-		bottom: -20px;
-		left: 10px;
+		bottom: -30px;
+		left: -20px;
 		width: 80px;
 		transform: rotate(150deg);
 	}
@@ -249,8 +249,8 @@
 	.mobile-card-wrapper > img:nth-child(2) {
 		position: absolute;
 		z-index: 2;
-		top: -70px;
-		right: 10px;
+		top: -80px;
+		right: -20px;
 		width: 80px;
 		transform: rotate(-30deg);
 	}
@@ -258,6 +258,7 @@
 	.slider-card {
 		width: 240px;
 		height: 210px;
+		margin: 0;
 		position: relative;
 		z-index: 3;
 		background-color: red;
@@ -349,13 +350,18 @@
 		cursor: pointer;
 	}
 
+	.smaller-text button {
+		font-size: .95em;
+		padding: 20px 5px;
+	}
+
 	#home-ctas {
 		margin-top: 50px;
 	}
 
 	.video-container video {
 		width: 100%;
-		border-radius: 50px;
+		border-radius: 30px;
 		-webkit-box-shadow: 0px 0px 21px -8px rgba(0,0,0,0.75);
 		-moz-box-shadow: 0px 0px 21px -8px rgba(0,0,0,0.75);
 		box-shadow: 0px 0px 21px -8px rgba(0,0,0,0.75);
@@ -431,6 +437,10 @@
 
 	.slider-img {
 		order: 1;
+	}
+
+	.slider-card {
+		margin: 0;
 	}
 
 	.slider-text {
