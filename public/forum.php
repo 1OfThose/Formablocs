@@ -71,7 +71,7 @@ require_once (__DIR__ . '/includes/header.php');
 
 					<div class="forum-message">
 						<div class="forum-user-img">
-							<img src="<?=$domain?>/img/people/christian-buehner-DItYlc26zVI-unsplash (1).jpg" alt="">
+							
 						</div>
 						<div class="forum-user-message">
 							<h3>Jean Bonbeur</h3>
@@ -81,7 +81,7 @@ require_once (__DIR__ . '/includes/header.php');
 					</div>
 					<div class="forum-message">
 						<div class="forum-user-img">
-							<img src="<?=$domain?>/img/people/christian-buehner-DItYlc26zVI-unsplash (1).jpg" alt="">
+							
 						</div>
 						<div class="forum-user-message">
 							<h3>Jean Bonbeur</h3>
@@ -91,7 +91,7 @@ require_once (__DIR__ . '/includes/header.php');
 					</div>
 					<div class="forum-message">
 						<div class="forum-user-img">
-							<img src="<?=$domain?>/img/people/christian-buehner-DItYlc26zVI-unsplash (1).jpg" alt="">
+							
 						</div>
 						<div class="forum-user-message">
 							<h3>Jean Bonbeur</h3>
@@ -101,7 +101,7 @@ require_once (__DIR__ . '/includes/header.php');
 					</div>
 					<div class="forum-message">
 						<div class="forum-user-img">
-							<img src="<?=$domain?>/img/people/christian-buehner-DItYlc26zVI-unsplash (1).jpg" alt="">
+							
 						</div>
 						<div class="forum-user-message">
 							<h3>Jean Bonbeur</h3>
@@ -111,7 +111,7 @@ require_once (__DIR__ . '/includes/header.php');
 					</div>
 					<div class="forum-message">
 						<div class="forum-user-img">
-							<img src="<?=$domain?>/img/people/christian-buehner-DItYlc26zVI-unsplash (1).jpg" alt="">
+						
 						</div>
 						<div class="forum-user-message">
 							<h3>Jean Bonbeur</h3>

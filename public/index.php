@@ -28,7 +28,7 @@ require_once (__DIR__ . '/includes/header.php');
 				<h1>Qui sommes-nous ?</h1>
 			</div>
 			<div class="video-container">
-				<video src="assets/video/Animation_FormaBlocs.mp4" autoplay muted controls loop></video>
+				<video src="assets/video/Animation_FormaBlocs.mp4" autoplay muted controls></video>
 			</div>
 		</div>
 	</div>
