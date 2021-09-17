@@ -3253,3 +3253,30 @@ header {
 	font-weight: 200;
 	cursor: pointer;
 }
+
+/* ================================
+			MENTIONS LEGALES
+================================== */
+
+#mentions_legales, #cgu, #cgv{
+	margin: 50px;
+    padding: 30px 50px 10px 50px;
+    font-size: 1.2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+	text-align: center;	
+	border-radius: 60px;
+	-webkit-box-shadow: 0px 0px 32px -19px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 32px -19px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 32px -19px rgba(0,0,0,0.75);
+}
+#mentions_legales h1, #cgu h1, #cgv h1 {
+	font-family: bc-alphapipe, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.2em;
+    color: var(--blue);
+    margin-bottom: 20px;
+}

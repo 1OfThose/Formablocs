@@ -45,9 +45,12 @@ require_once (__DIR__ . '/includes/header.php');
                 //Vérifier si le Password correspond
                 if(password_verify($password, $db_password)){
                     $_SESSION['user_id'] = $user['id'];
-                    $_SESSION['user_name'] = $user['username'];
-                    header("Location: index.php");
-                    exit();
+					$_SESSION['user_name'] = $user['username'];
+					$URL=$domain.'/../index.php';
+					echo "<script type='text/javascript'>document.location.href='{$URL}';</script>";
+					echo '<META HTTP-EQUIV="refresh" content="0;URL=' . $URL . '">';
+                    //header("Location: index.php");
+                    //exit();
                 }else{
                     echo "<p class=\"comments\">L'utilisateur et le mot de passe ne correspondent pas</p>";
                 }

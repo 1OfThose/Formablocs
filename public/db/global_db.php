@@ -1,11 +1,8 @@
 <?php
-if(empty(session_id())){
-    session_start();
-} else {
-    session_write_close();
-    session_regenerate_id(true);
-}
 
+if(!isset($_SESSION)){
+    session_start();
+}
 require_once (__DIR__ . '/global.php');
 
 $dbName = DB_NAME;
@@ -13,6 +10,6 @@ $dbHost = DB_HOST;
 
 $dsn = "mysql:host=$dbHost;port=3306;dbname=$dbName";
 
-$pdo = new PDO($dsn, DB_USER, DB_PASSWORD);
+$pdo = new PDO($dsn, DB_USER, DB_PASSWORD, array(\PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES \'UTF8\''));
 
 ?>

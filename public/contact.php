@@ -20,7 +20,7 @@ require_once (__DIR__ . '/includes/header.php');
         
         if (empty($array["firstname"]))
         {
-            $array["firstnameError"] = "Veuillez saisir votre prénom :";
+            $array["firstnameError"] = "Veuillez saisir votre prénom";
             $array["isSuccess"] = false; 
         } 
         else
@@ -30,7 +30,7 @@ require_once (__DIR__ . '/includes/header.php');
 
         if (empty($array["name"]))
         {
-            $array["nameError"] = "Veuillez saisir votre nom :";
+            $array["nameError"] = "Veuillez saisir votre nom";
             $array["isSuccess"] = false; 
         } 
         else
@@ -39,13 +39,13 @@ require_once (__DIR__ . '/includes/header.php');
         }
         if(empty($array["email"]))
         {
-            $array["emailError"] = "Veuillez saisir une email :";
+            $array["emailError"] = "Veuillez saisir une email";
             $array["isSuccess"] = false;
         }
         else{
             if(!isEmail($array["email"])) 
             {
-                $array["emailError"] = "Veuillez saisir un email valide :";
+                $array["emailError"] = "Veuillez saisir un email valide";
                 $array["isSuccess"] = false; 
             } 
             else
@@ -55,7 +55,7 @@ require_once (__DIR__ . '/includes/header.php');
         }
         if (!isPhone($array["phone"]))
         {
-            $array["phoneError"] = "Veuillez saisir un numéro de téléphone valide :";
+            $array["phoneError"] = "Veuillez saisir un numéro de téléphone valide";
             $array["isSuccess"] = false; 
         }
         else
@@ -64,7 +64,7 @@ require_once (__DIR__ . '/includes/header.php');
         }
         if (empty($array["subject"]))
         {
-            $array["subjectError"] = "Veuillez saisir le sujet de votre message :";
+            $array["subjectError"] = "Veuillez saisir le sujet de votre message";
             $array["isSuccess"] = false; 
         }
         else
@@ -73,7 +73,7 @@ require_once (__DIR__ . '/includes/header.php');
         }
         if (empty($array["message"]))
         {
-            $array["messageError"] = "Veuillez saisir un message :";
+            $array["messageError"] = "Veuillez saisir un message";
             $array["isSuccess"] = false; 
         }
         else
@@ -127,12 +127,12 @@ require_once (__DIR__ . '/includes/header.php');
 					<div class="contact-group">
 						<label for="name">Nom <span class="color">*</span></label>
 						<input id="name" type="text" name="name" class="form-control" placeholder="Entrez votre nom">
-						<p class="comments"></p>
+						<p class="comments"><?=$array["nameError"]?></p>
 					</div>
 					<div class="contact-group">
 						<label for="firstname">Prénom <span class="color">*</span></label>
 						<input id="firstname" type="text" name="firstname" class="form-control" placeholder="Entrez votre prénom">
-						<p class="comments"></p>
+						<p class="comments"><?=$array["firstnameError"]?></p>
 					</div>
 				</div>
 
@@ -140,27 +140,27 @@ require_once (__DIR__ . '/includes/header.php');
 					<div class="contact-group">
 						<label for="email">Adresse e-mail <span class="color">*</span></label>
 						<input id="email" type="text" name="email" class="form-control" placeholder="Entrez votre adresse e-mail">
-						<p class="comments"></p>
+						<p class="comments"><?=$array["emailError"]?></p>
 					</div>
 
 					<div class="contact-group">
 						<label for="phone">Téléphone</label>
 						<input id="phone" type="tel" name="phone" class="form-control" placeholder="Entrez votre numéro de téléphone">
-						<p class="comments"></p>
+						<p class="comments"><?=$array["phoneError"]?></p>
 					</div>
 				</div>
 
 				<div class="contact-group">
 					<label for="subject">Sujet du message <span class="color">*</span></label>
 					<input id="subject" type="text" name="subject" placeholder="Entrez votre sujet du message">
-					<p class="comments"></p>
+					<p class="comments"><?=$array["subjectError"]?></p>
 				</div>
 
 				<div class="textarea">
 					<img src="<?=$domain?>/icons/ROND ORANGE.svg" alt="">
 					<img src="<?=$domain?>/icons/ROND ORANGE.svg" alt="">
 					<textarea id="message" name="message" placeholder="Ecrivez votre message" rows="8"></textarea>
-					<p class="comments"></p>
+					<p class="comments"><?=$array["messageError"]?></p>
 				</div>
 
 				<button type="submit" class="button">Envoyer</button>
