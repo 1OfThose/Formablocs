@@ -325,6 +325,10 @@
 	.home-btns a {
 		width: 100%;
 	}
+
+	.home2-btns a {
+		width: 100%;
+	}
 	
 	.home-btns button {
 		width: 100%;
@@ -339,7 +343,7 @@
 	}
 
 	.home2-btns button {
-		width: 300px;
+		width: 100%;
 		background-color: var(--blue);
 		color: white;
 		padding: 15px 15px;

@@ -1,5 +1,5 @@
 <?php
-
+$page ='contact';
 require_once (__DIR__ . '/includes/header.php');
 
 ?>

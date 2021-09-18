@@ -44,7 +44,7 @@
 			<div class="ft-col">
 				<h3>Newsletter</h3>
 				<p>N'hésitez pas à vous abonner à notre newsletter, afin de ne louper aucune actualité !</p>
-				<form action="#" method="POST">
+				<form action="#" method="POST" class="red-hover">
 					<input type="email" required placeholder="Entrez votre adresse mail">
 					<button type="submit">S'inscrire</button>
 				</form>

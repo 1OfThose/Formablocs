@@ -41,11 +41,11 @@
 			</div>
 			<div class="navlinks">
 				<ul class="navlist">
-					<li class="linko"><a href="<?=$domain?>/../formations.php" class="underline">Nos formations</a></li>
-					<li class="linko"><a href="<?=$domain?>/../prestations.php" class="underline">Nos prestations de conseil</a></li>
-					<li class="linko"><a href="<?=$domain?>/../financement.php" class="underline">Financement</a></li>
-					<li class="linko"><a href="<?=$domain?>/../contact.php" class="underline">Contact</a></li>
-					<li class="linko"><a href="<?=$domain?>/../forum.php" class="underline">Forum</a></li>
+					<li class="linko"><a href="<?=$domain?>/../formations.php" class="underline <?php if($page == 'formations'){echo 'active';} ?>">Nos formations</a></li>
+					<li class="linko"><a href="<?=$domain?>/../prestations.php" class="underline <?php if($page == 'prestations'){echo 'active';} ?>">Nos prestations de conseil</a></li>
+					<li class="linko"><a href="<?=$domain?>/../financement.php" class="underline <?php if($page == 'financement'){echo 'active';} ?>">Financement</a></li>
+					<li class="linko"><a href="<?=$domain?>/../contact.php" class="underline <?php if($page == 'contact'){echo 'active';} ?>">Contact</a></li>
+					<li class="linko"><a href="<?=$domain?>/../forum.php" class="underline <?php if($page == 'forum'){echo 'active';} ?>">Forum</a></li>
 				</ul>
 			</div>
 		</div>

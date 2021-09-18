@@ -1,5 +1,5 @@
 <?php
-
+$page ='forum';
 require_once (__DIR__ . '/includes/header.php');
 
 ?>
