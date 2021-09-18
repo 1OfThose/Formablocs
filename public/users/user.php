@@ -9,10 +9,10 @@ $userFormations = $loggedIn['formations'];
 $userPurchase = $loggedIn['purchased_date'];
 
 $formationsList = substr($userFormations, 0, -2);
-$formationArray = explode(',', $formationsList);
+$formationArray = explode(', ', $formationsList);
 
 $formationsDate = substr($userPurchase, 0, -2);
-$dateArray = explode(',', $formationsDate);
+$dateArray = explode(', ', $formationsDate);
 
 $objetFormations = (object) $formationArray;
 $objetDate = (object) $dateArray;
@@ -23,7 +23,6 @@ foreach ($formationArray as $price_f) {
 	$name = $form[0]['formation'];
 	$picto = $form[0]['picto'];
 }
-
 foreach ($dateArray as $dateOnly) {
 	$dateOnly = $dateOnly;
 }
@@ -79,7 +78,7 @@ require_once (__DIR__ . '/../includes/header.php');
 	<div class="container">
 		<div class="mes-formations-container">
 			<h1>Mes formations et accompagnements</h1>
-			<?php if(!empty($formationArray)) { ?>
+			<?php if(!empty($formationArray)) {?>
 			<div class="mes-formations-list">
 
 				<?php foreach($formationArray as $formation) {?>
