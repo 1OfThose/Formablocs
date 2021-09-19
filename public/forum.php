@@ -1,12 +1,13 @@
 <?php
 
+$page ='forum';
 require_once (__DIR__ . '/includes/header.php');
 
 ?>
 
 <section id="home">
 	<div class="home-bg">
-		<a href="#"><img src="<?=$domain?>/img/banners/Forum_ 1980x714 px.png" alt=""></a>
+		<img src="<?=$domain?>/img/banners/Forum_ 1980x714 px.png" alt="">
 	</div>
 </section>
 
@@ -75,7 +76,7 @@ require_once (__DIR__ . '/includes/header.php');
 						</div>
 						<div class="forum-user-message">
 							<h3>Jean Bonbeur</h3>
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora debitis ducimus, tenetur perspiciatis atque optio sed quos? Odit, cupiditate tenetur.</p>
+							<p>Bonjour, je suis salarié en CDI dans une banque en tant que conseiller bancaire particuliers. Je forme les nouveaux arrivants mais j’aimerais me professionnaliser, voir changer de secteur. Comment financer ma formation ? Et la rémunération, comment ça se passe ?</p>
 							<img src="<?=$domain?>/icons/FLECHE DROITE BLEUE.svg" alt="">
 						</div>
 					</div>
@@ -85,7 +86,7 @@ require_once (__DIR__ . '/includes/header.php');
 						</div>
 						<div class="forum-user-message">
 							<h3>Jean Bonbeur</h3>
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora debitis ducimus, tenetur perspiciatis atque optio sed quos? Odit, cupiditate tenetur.</p>
+							<p>Bonjour, nous sommes un club sportif professionnel de rugby. Nous souhaitons ouvrir notre propre CFA. Nous avons une obligation de formation de nos joueurs mineurs et d’accompagnement à la reconversion de nos sénior. Pouvez vous nous accompagner ?</p>
 							<img src="<?=$domain?>/icons/FLECHE DROITE BLEUE.svg" alt="">
 						</div>
 					</div>
@@ -95,7 +96,7 @@ require_once (__DIR__ . '/includes/header.php');
 						</div>
 						<div class="forum-user-message">
 							<h3>Jean Bonbeur</h3>
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora debitis ducimus, tenetur perspiciatis atque optio sed quos? Odit, cupiditate tenetur.</p>
+							<p>Bonjour, je souhaite suivre deux modules de la formation CIP cette année, et les autres l’année suivante. Est ce que j’aurai quand même mon diplôme à la fin ?</p>
 							<img src="<?=$domain?>/icons/FLECHE DROITE BLEUE.svg" alt="">
 						</div>
 					</div>
@@ -105,7 +106,7 @@ require_once (__DIR__ . '/includes/header.php');
 						</div>
 						<div class="forum-user-message">
 							<h3>Jean Bonbeur</h3>
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora debitis ducimus, tenetur perspiciatis atque optio sed quos? Odit, cupiditate tenetur.</p>
+							<p>Bonjour, je suis en charge du service formation continue de mon établissement. Nous sommes en pleine démarche de certification qualité et souhaitons être accompagnés. Je suis cependant un peu inquiet du tout distanciel, pouvez vous me préciser les modalités d’accompagnement ?</p>
 							<img src="<?=$domain?>/icons/FLECHE DROITE BLEUE.svg" alt="">
 						</div>
 					</div>
@@ -115,7 +116,7 @@ require_once (__DIR__ . '/includes/header.php');
 						</div>
 						<div class="forum-user-message">
 							<h3>Jean Bonbeur</h3>
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora debitis ducimus, tenetur perspiciatis atque optio sed quos? Odit, cupiditate tenetur.</p>
+							<p>Bonjour, je ne suis pas contre le distanciel mais je souhaiterais vous rencontrer, si possible physiquement avant de me lancer, est-ce possible ?</p>
 							<img src="<?=$domain?>/icons/FLECHE DROITE BLEUE.svg" alt="">
 						</div>
 					</div>
@@ -155,7 +156,7 @@ require_once (__DIR__ . '/includes/header.php');
 			</div>
 			<div class="forum-bottom">
 				<h1>Vous ne trouvez pas votre bonheur sur le forum ?</h1>
-				<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum est eligendi enim animi perspiciatis, quae error officia magni illo? Dolores.</p>
+				<p>Vous souhaitez plus d’information, sur une prestation, une formation ou l’accompagnement proposé par Formablocs, n’hésitez pas à nous contacter. Nous nous engageons à vous répondre sous 2 jours ouvrés. A très bientôt !</p>
 				<a href="<?=$domain?>/../contact.php" class="red-hover"><button>Nous contacter</button></a>
 			</div>
 		</div>

@@ -44,10 +44,11 @@
 			</div>
 			<div class="ft-col">
 				<h3>Newsletter</h3>
-				<p>N'hésitez pas à vous abonner à notre newsletter, afin de ne louper aucune actualité !</p>
-				<form action="#" method="POST">
+				<p>N'hésitez pas à vous abonner à notre newsletter, pour de ne louper aucune actualité !</p>
+				<form action="#" method="POST" class="red-hover">
 					<input type="email" required placeholder="Entrez votre adresse mail">
 					<button type="submit">S'inscrire</button>
+					<p class="legal-notice">En nous confiant votre adresse e-mail, vous consentez à recevoir des lettres d’informations (newsletter) de la part de Formablocs. Vous pouvez vous désinscrire à tout moment en cliquant sur le lien « se désinscrire » en bas de la newsletter reçue. <br> <a href="#">Plus d’information dans notre Politique de confidentialité</a> </p>
 				</form>
 			</div>
 		</div>
@@ -55,9 +56,16 @@
 	<div class="foot-footer">
 		<div class="container">
 			<div class="footer-links">
+
 				<a href="<?=$domain?>/../mentions_legales.php">Mentions légales et politiques de confidentialité</a>
 				<a href="<?=$domain?>/../CGU.php">Conditions générales d'utilisation</a>
 				<a href="<?=$domain?>/../CGV.php">Conditions générales de vente</a>
+
+				<a href="#">Mentions légales</a>
+				<a href="#">Politique de confidentialité</a>
+				<a href="#">Conditions générales d'utilisation</a>
+				<a href="#">Conditions générales de vente</a>
+
 			</div>
 		</div>
 	</div>

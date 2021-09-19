@@ -29,14 +29,14 @@ foreach ($dateArray as $dateOnly) {
 ?>
 
 <?php
-
+$page ='user';
 require_once (__DIR__ . '/../includes/header.php');
 
 ?>
 
 <section id="home">
 	<div class="home-bg">
-		<a href="#"><img src="<?=$domain?>/img/banners/Profil_ 1980x714 px.png" alt=""></a>
+		<img src="<?=$domain?>/img/banners/Profil_ 1980x714 px.png" alt="">
 	</div>
 </section>
 

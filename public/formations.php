@@ -1,6 +1,5 @@
 <?php
 	require_once (__DIR__ . '/db/global_db.php');
-
 	$stm = $pdo->query("SELECT * FROM formations");
 	$rows = $stm->fetchall(PDO::FETCH_ASSOC);
 
@@ -14,13 +13,14 @@
 
 <?php
 
+$page ='formations';
 require_once (__DIR__ . '/includes/header.php');
 
 ?>
 <script src="<?=$domain?>/js/formations.js"></script>
 <section id="home">
 	<div class="home-bg-v2">
-		<a href="#"><img src="<?=$domain?>/img/banners/Decouverte_ 1980x714 px.png" alt=""></a>
+		<img src="<?=$domain?>/img/banners/Decouverte_ 1980x714 px.png" alt="">
 	</div>
 </section>
 
@@ -177,7 +177,7 @@ require_once (__DIR__ . '/includes/header.php');
 				<img src="assets/icons/FLECHE ORANGE.svg" alt="">
 				<h1>Comment financer ma formation ?</h1>
 			</div>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt voluptatem animi veritatis sit. Odio ex dolores fugit itaque corrupti architecto, nisi dicta harum voluptatum aperiam nulla! Eos obcaecati minima natus.</p>
+			<p>Des solutions de financement existent selon les cas et parfois même sans perte de rémunération. Consultez notre page dédiée pour voir les options selon votre situation. Vous pouvez aussi nous contacter pour que l’on vous accompagne dans vos démarches !</p>
 			<a href="financement.php" class="red-hover"><button>En savoir plus</button></a>
 		</div>
 		<img src="<?=$domain?>/illustrations/ILLUSTRATION _COMMENT FINANCER MA FORMATION_.svg" alt="">

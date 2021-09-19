@@ -1,5 +1,5 @@
 <?php
-
+$page = 'home';
 require_once (__DIR__ . '/includes/header.php');
 
 ?>
@@ -7,7 +7,7 @@ require_once (__DIR__ . '/includes/header.php');
 
 <section id="home">
 	<div class="home-bg">
-		<a href="#"><img src="<?=$domain?>/img/banners/Homepage_ 1980x824 px.png" alt=""></a>
+		<img src="<?=$domain?>/img/banners/Homepage_ 1980x824 px.png" alt="">
 	</div>
 </section>
 
@@ -59,16 +59,6 @@ require_once (__DIR__ . '/includes/header.php');
 
 							<div class="slider home-carousel-slides">
 								<div class="slider-text">
-									<h2>Accompagnement</h2>
-									<p>Des formations et des conseils en distanciel mais avec l’accompagnement d’une experte à chaque étape.</p>	
-								</div>
-								<div class="slider-img">
-									<img src="assets/illustrations/ILLUSTRATION ACCUEIL CARROUSEL.svg" alt="">
-								</div>
-							</div>
-
-							<div class="slider home-carousel-slides">
-								<div class="slider-text">
 									<h2>Entraide humanité partage </h2>
 									<p>Mme Zitouni a vécu l’expérience de la reconversion et en a retiré des valeurs humaines fortes qu’elle partage avec ses clients. Elle croit à la possibilité pour chacun d’avoir une deuxième vie professionnelle, une deuxième chance. Elle a pour ambition, de former des formateurs pour adultes, des conseillers en insertion professionnelle qui auront ensuite à leur tour la charge d’accompagner des adultes en reconversion.</p>	
 								</div>
@@ -79,7 +69,7 @@ require_once (__DIR__ . '/includes/header.php');
 
 							<div class="slider home-carousel-slides">
 								<div class="slider-text">
-									<h2>Distanciel</h2>
+									<h2>Distanciel et accompagnement</h2>
 									<p>Formez vous et faites vous accompagner à votre rythme et partout grâce aux prestations à distance de FormaBlocs. Mais vous n’êtes pas seul derrière votre écran, une experte vous accompagne !</p>	
 								</div>
 								<div class="slider-img">
@@ -141,13 +131,8 @@ require_once (__DIR__ . '/includes/header.php');
 			<div class="carousel-container2">
 				<div class="home-carousel">
 					<div class="finance-carousel-container">
-						<div class="home-carousel-left-arrow">
-							<img src="<?=$domain?>/icons/FLECHE GAUCHE BLEUE.svg" alt="Précedent" id="prev-home2">
-						</div>
-
 						<div class="home-carousel-container">
-
-							<div class="group-slider home2-carousel-slides current-home2-carousel">
+							<div class="group-slider">
 								<div class="slider-card">
 									<div class="slider-card-img">
 										<img src="assets/img/people/aerial-view-hands-working-computer-white-table-office.jpg" alt="">
@@ -171,7 +156,7 @@ require_once (__DIR__ . '/includes/header.php');
 									<a href="prestations.php#rncp">RNCP</a>
 								</div>
 							</div>
-
+              
 							<div class="group-slider home2-carousel-slides">
 								<div class="slider-card">
 									<div class="slider-card-img">

@@ -1,5 +1,5 @@
 <?php
-
+$page ='contact';
 require_once (__DIR__ . '/includes/header.php');
 
 ?>
@@ -84,7 +84,7 @@ require_once (__DIR__ . '/includes/header.php');
         {
             $headers = "From: {$array['firstname']} {$array['name']} <{$array['email']}>\r\nReply-To: {$array['email']}";
             if (mail($emailTo, "Un message de votre site : {$array['subject']}", $emailText, $headers)) {
-              echo "<p class='comments'>Votre message a bien été envoyer!</p>";
+              echo "<p class='comments'>Votre message a bien été envoyé!</p>";
             } else {
               echo "<p class='comments'>Erreur ! Votre message n'a pas été envoyé</p>";
             }
@@ -118,7 +118,7 @@ require_once (__DIR__ . '/includes/header.php');
 
 			<div class="contact-text">
 				<h1>Vous avez une question ?</h1>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui molestias quos eos perspiciatis autem necessitatibus corporis, cum non? Amet nemo ea eligendi, doloremque expedita minima odio animi totam magnam itaque cumque ipsum neque aut laudantium.</p>
+				<p>Vous souhaitez plus d’information, sur une prestation, une formation ou l’accompagnement proposé par Formablocs, n’hésitez pas à nous contacter via le formulaire ci-dessous. Nous nous engageons à vous répondre sous 2 jours ouvrés. A très bientôt !</p>
 			</div>
 
 			<form id="contact-form" method="POST" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" class="red-hover">
@@ -163,6 +163,8 @@ require_once (__DIR__ . '/includes/header.php');
 					<p class="comments"><?=$array["messageError"]?></p>
 				</div>
 
+				<p class="legal-notice">En nous contactant, vous consentez au traitement de vos données personnelles par Formablocs pour répondre et suivre votre demande. <br> <a href="#">Plus d’information dans notre Politique de confidentialité</a></p>
+
 				<button type="submit" class="button">Envoyer</button>
 			
        		</form>
@@ -171,7 +173,7 @@ require_once (__DIR__ . '/includes/header.php');
 				<div class="blur-div">
 					<h1>Formablocs</h1>
 					<h4>Adresse postale</h4>
-					<p>07 89 67 23 43</p>
+					<p>02 00 99 11 88</p>
 				</div>
 			</div>
 

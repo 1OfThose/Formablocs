@@ -3,24 +3,36 @@
 		<div class="header-main">
 			<div class="header-info">
 				<div class="info-a">
-					<a href="tel:+330789672343"><img src="<?=$domain?>/icons/TELEPHONE.svg" alt="Téléphone"></a>
-					<a href="tel:+330789672343"> 07 89 67 23 43</a>
+					<a href="tel:+330200991188">
+						<img src="<?=$domain?>/icons/TELEPHONE.svg" alt="Téléphone">
+						<span>02 00 99 11 88</span>
+					</a>
 				</div>
-				<div class="info-b">
-					<a href="mailto:forma.blocs@blabla.fr"><img src="<?=$domain?>/icons/ENVELOPPE.svg" alt="Mail"></a>
-					<a href="mailto:forma.blocs@blabla.fr"> forma.blocs@blabla.fr</a>
+				<div class="info-a">
+					<a href="mailto:contact@formablocs.com">
+						<img src="<?=$domain?>/icons/ENVELOPPE.svg" alt="Mail">
+						<span>contact@formablocs.com</span>
+					</a>
 				</div>
 			</div>
 			<div class="right-icons">
+
 				<a href="<?=$domain?>/../index.php"><img src="<?=$domain?>/icons/MAISON BLANCHE.svg" alt="Accueil"></a>
+
 				<?php if (isset($_SESSION['user_id'])) { ?>
 					<a href="<?=$domain?>/../includes/logout.php"><img src="<?=$domain?>/icons/SE DECONNECTER.svg" alt="Déconnexion"></a>
 					<div class="user-account">
-						<a class="user-icon" href="<?=$domain?>/../users/user.php"><img src="<?=$domain?>/icons/USER.svg" alt="Votre compte"> <span><?php echo $_SESSION['user_name']?></a></span> 
+						<a class="user-icon" href="<?=$domain?>/../users/user.php">
+							<img src="<?=$domain?>/icons/USER.svg" alt="Votre compte"> 
+							<span><?php echo $_SESSION['user_name']?></span> 
+						</a>
 					</div>
 				<?php } else { ?>
 					<div class="user-account">
-						<a class="user-icon" href="<?=$domain?>/../login-signup.php"><img src="<?=$domain?>/icons/USER.svg" alt="Login"> <span>Se connecter</a></span> 
+						<a class="user-icon" href="<?=$domain?>/../login-signup.php">
+							<img src="<?=$domain?>/icons/USER.svg" alt="Login"> 
+							<span>Se connecter</span> 
+						</a>
 					</div>
 				<?php } ?>
 			</div>
@@ -41,11 +53,11 @@
 			</div>
 			<div class="navlinks">
 				<ul class="navlist">
-					<li class="linko"><a href="<?=$domain?>/../formations.php" class="underline">Nos formations</a></li>
-					<li class="linko"><a href="<?=$domain?>/../prestations.php" class="underline">Nos prestations de conseil</a></li>
-					<li class="linko"><a href="<?=$domain?>/../financement.php" class="underline">Financement</a></li>
-					<li class="linko"><a href="<?=$domain?>/../contact.php" class="underline">Contact</a></li>
-					<li class="linko"><a href="<?=$domain?>/../forum.php" class="underline">Forum</a></li>
+					<li class="linko"><a href="<?=$domain?>/../formations.php" class="underline <?php if($page == 'formations'){echo 'active';} ?>">Nos formations</a></li>
+					<li class="linko"><a href="<?=$domain?>/../prestations.php" class="underline <?php if($page == 'prestations'){echo 'active';} ?>">Nos prestations de conseil</a></li>
+					<li class="linko"><a href="<?=$domain?>/../financement.php" class="underline <?php if($page == 'financement'){echo 'active';} ?>">Financement</a></li>
+					<li class="linko"><a href="<?=$domain?>/../contact.php" class="underline <?php if($page == 'contact'){echo 'active';} ?>">Contact</a></li>
+					<li class="linko"><a href="<?=$domain?>/../forum.php" class="underline <?php if($page == 'forum'){echo 'active';} ?>">Forum</a></li>
 				</ul>
 			</div>
 		</div>
