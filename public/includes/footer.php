@@ -57,14 +57,10 @@
 		<div class="container">
 			<div class="footer-links">
 
-				<a href="<?=$domain?>/../mentions_legales.php">Mentions légales et politiques de confidentialité</a>
+				<a href="<?=$domain?>/../mentions_legales.php">Mentions légales</a>
+				<a href="<?=$domain?>/../confidentialite.php">Politique de confidentialité</a>
 				<a href="<?=$domain?>/../CGU.php">Conditions générales d'utilisation</a>
 				<a href="<?=$domain?>/../CGV.php">Conditions générales de vente</a>
-
-				<a href="#">Mentions légales</a>
-				<a href="#">Politique de confidentialité</a>
-				<a href="#">Conditions générales d'utilisation</a>
-				<a href="#">Conditions générales de vente</a>
 
 			</div>
 		</div>

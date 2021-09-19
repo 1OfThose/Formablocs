@@ -3263,7 +3263,7 @@ header {
 			MENTIONS LEGALES
 ================================== */
 
-#mentions_legales, #cgu, #cgv{
+#mentions_legales, #cgu, #cgv, #confidentialite{
 	margin: 50px;
     padding: 30px 50px 10px 50px;
     font-size: 1.2em;
@@ -3278,14 +3278,14 @@ header {
 	box-shadow: 0px 0px 32px -19px rgba(0,0,0,0.75);
 }
 
-#mentions_legales h1, #cgu h1, #cgv h1 {
+#mentions_legales h1, #cgu h1, #cgv h1 , #confidentialite h1{
 	font-family: bc-alphapipe, sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 2.2em;
     color: var(--blue);
     margin-bottom: 20px;
-  
+}
 .legal-notice {
 	text-align: center;
 	color: rgb(182, 182, 182);
