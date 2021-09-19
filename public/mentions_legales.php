@@ -4,7 +4,7 @@ require_once (__DIR__ . '/includes/header.php');
 
 ?>
 <section id="mentions_legales">
-<h1>Mentions légales et politique de confidentialité</h1>
+<h1>Mentions légales</h1>
  
 <p>La société Formablocs, soucieuse des droits des individus, notamment au regard des traitements automatisés et dans une volonté de transparence avec ses clients, a mis en place une politique reprenant l’ensemble de ces traitements, des finalités poursuivies par ces derniers ainsi que des moyens d’actions à la disposition des individus afin qu’ils puissent au mieux exercer leurs droits. 
 Pour toute information complémentaire sur la protection des données personnelles, nous vous invitons à consulter le site : https://www.cnil.fr/
