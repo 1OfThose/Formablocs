@@ -122,11 +122,15 @@
 		width: auto;
 	}
 
-	.right-icons {
-		order: 1;
+	.info-a a span {
+		display: none;
 	}
 
-	.user-account {
+	.info-a a img {
+		width: 24px;
+	}
+
+	.right-icons {
 		order: 1;
 	}
 
@@ -150,7 +154,7 @@
 		display: flex;
 		justify-content: flex-start;
 		align-items: center;
-		flex-flow: row;
+		flex-flow: row wrap;
 	}
 	
 	.ft-col form input {
@@ -818,14 +822,6 @@
 		-webkit-box-shadow: 0px 0px 28px -15px rgb(0 0 0 / 75%);
 		-moz-box-shadow: 0px 0px 28px -15px rgba(0,0,0,0.75);
 		box-shadow: 0px 0px 28px -15px rgb(0 0 0 / 75%);
-	}
-
-	.forum-user-message img {
-		position: absolute;
-		right: -25px;
-		top: 100px;
-		width: 50px;
-		cursor: pointer;
 	}
 
 	.forum-user-message p {

@@ -96,19 +96,13 @@ select:-webkit-autofill {
 	max-width: 1920px;
 }
 
-.home-bg > a {
-	width: 100%;
-	position: relative;
-	cursor: default;
-}
-
-.home-bg > a img {
+.home-bg > img {
 	width: 100%;
 	position: relative;
 	z-index: 8;
 }
 
-.home-bg a::after {
+.home-bg::after {
 	content: url('../icons/FLECHE\ BAS\ BLEUE.svg');
 	z-index: 11;
 	width: 80px;
@@ -121,7 +115,7 @@ select:-webkit-autofill {
 	text-align: center;
 }
 
-.home-bg a::before {
+.home-bg::before {
 	content: url('../icons/ROND\ ORANGE.svg');
 	position: absolute;
 	width: 120px;
@@ -142,19 +136,13 @@ select:-webkit-autofill {
 	max-width: 1920px;
 }
 
-.home-bg-v2 > a {
-	width: 100%;
-	position: relative;
-	cursor: default;
-}
-
-.home-bg-v2 > a img {
+.home-bg-v2 > img {
 	width: 100%;
 	position: relative;
 	z-index: 8;
 }
 
-.home-bg-v2 a::after {
+.home-bg-v2::after {
 	content: url('../icons/FLECHE\ BAS\ BLEUE.svg');
 	z-index: 11;
 	width: 65px;
@@ -167,7 +155,7 @@ select:-webkit-autofill {
 	text-align: center;
 }
 
-.home-bg-v2 a::before {
+.home-bg-v2::before {
 	content: url('../icons/ROND\ ORANGE.svg');
 	position: absolute;
 	width: 120px;
@@ -392,37 +380,33 @@ header {
 }
 
 .header-info {
-	width: 70%;
+	width: 35%;
 	display: flex;
-	justify-content: flex-start;
+	justify-content: space-between;
 	align-items: center;
 }
 
-.info-a, .info-b {
+.info-a {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
-.info-b {
-	margin-left: 100px;
-}
-
 .info-a img {
-	width: 27px;
-}
-.info-b img {
-	width: 30px;
+	width: 20px;
+	margin-right: 8px;
 }
 
-.info-a a, .info-b a {
-	margin-left: 10px;
+.info-a a{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
 }
 
 .right-icons {
 	display: flex;
 	justify-content: space-between;
-	align-items: flex-start;
+	align-items: baseline;
 }
 
 .user-account {
@@ -447,7 +431,7 @@ header {
 }
 
 .right-icons a img {
-	width: 27px;
+	width: 22px;
 }
 
 .right-icons a {
@@ -477,7 +461,7 @@ header {
 }
 
 .logo {
-	width: 22%;
+	width: 20%;
 }
 
 .navlinks {
@@ -2032,14 +2016,15 @@ header {
 
 .forum-user-message p {
 	font-weight: 200;
-	font-size: 1.2em;
+	font-size: 1.1em;
 }
 
 .forum-user-message img {
 	position: absolute;
-	right: -25px;
-	top: 45px;
-	width: 50px;
+	right: -20px;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 40px;
 	cursor: pointer;
 }
 
@@ -2154,7 +2139,7 @@ header {
 .finance-heading .second-title {
 	position: absolute;
 	bottom: 30px;
-	left: 180px;
+	left: 150px;
 }
 
 #demandeur .finance-heading > img {
@@ -2166,7 +2151,7 @@ header {
 }
 
 .finance-heading > img {
-	width: 450px;
+	width: 400px;
 }
 
 .finance-carousel {
@@ -2305,8 +2290,9 @@ header {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin: 20px 0;
+	margin: 50px 0;
 }
+
 .comments {
 	width: 100%;
 	display: flex;
@@ -3270,4 +3256,21 @@ header {
 	font-size: 1.4em;
 	font-weight: 200;
 	cursor: pointer;
+}
+
+.legal-notice {
+	text-align: center;
+	color: rgb(182, 182, 182);
+	margin-top: 50px;
+	font-weight: 300;
+}
+
+.legal-notice a {
+	color: rgb(182, 182, 182);
+	text-decoration: underline;
+	font-weight: 400;
+}
+
+.ft-col .legal-notice {
+	font-size: .7em !important;
 }

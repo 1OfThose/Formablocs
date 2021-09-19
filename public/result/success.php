@@ -50,7 +50,7 @@ if(!in_array($priceID, $array_formation)){
 ?>
 
 <?php
-
+$page = 'succes';
 require_once (__DIR__ . '/../includes/header.php');
 
 ?>

@@ -1,4 +1,3 @@
-
 <?php
 
 $page ='prestations';
@@ -8,7 +7,7 @@ require_once (__DIR__ . '/includes/header.php');
 
 <section id="home">
 	<div class="home-bg-v2">
-		<a href="#"><img src="<?=$domain?>/img/banners/Conseil_ 1980x714 px.png" alt=""></a>
+		<img src="<?=$domain?>/img/banners/Conseil_ 1980x714 px.png" alt="">
 	</div>
 </section>
 
@@ -31,7 +30,7 @@ require_once (__DIR__ . '/includes/header.php');
 
 			<img src="<?=$domain?>/illustrations/ILLUSTRATION PRESTATION 1.svg" alt="">
 
-			<div class="prestations-carousel">
+			<div class="prestations-carousel" id="carousel-1">
 
 				<div class="prestation-left-arrow">
 					<img src="<?=$domain?>/icons/FLECHE GAUCHE BLEUE.svg" alt="Précedent" id="prev-1">
@@ -105,7 +104,7 @@ require_once (__DIR__ . '/includes/header.php');
 				</div>
 
 			</div>
-			<div class="prestations-carousel">
+			<div class="prestations-carousel" id="carousel-2">
 
 				<div class="prestation-left-arrow">
 					<img src="<?=$domain?>/icons/FLECHE GAUCHE BLEUE.svg" alt="Précedent" id="prev-2">
@@ -179,7 +178,7 @@ require_once (__DIR__ . '/includes/header.php');
 				</div>
 
 			</div>
-			<div class="prestations-carousel">
+			<div class="prestations-carousel" id="carousel-3">
 
 				<div class="prestation-left-arrow">
 					<img src="<?=$domain?>/icons/FLECHE GAUCHE BLEUE.svg" alt="Précedent" id="prev-3">
@@ -209,7 +208,7 @@ require_once (__DIR__ . '/includes/header.php');
 							</div>
 					</div>
 					<div class="prestation-card-text">
-						<p>Proposer des titres enregistrés au RNCP c’est favorisé les possibilités de financement de ses formations. La démarche de reconnaissance est RNCP suit une méthodologie complexe. FormaBlocs peut vous accompagner.</p>
+						<p>Proposer des titres enregistrés au RNCP c’est favoriser les possibilités de financement de ses formations. La démarche de reconnaissance RNCP suit une méthodologie complexe. FormaBlocs peut vous accompagner.</p>
 					</div>
 					<div class="carousel-dots">
 						<span class="active-dot"></span>

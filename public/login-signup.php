@@ -10,7 +10,7 @@ require_once (__DIR__ . '/includes/header.php');
 	<div class="container">
 		<div class="login-container">
 			<h1>Bonjour !</h1>
-			<form  action="" method="POST" >
+			<form  action="" method="POST" class="red-hover">
 				<div class="login-group">
 					<label for="login-username">Nom d'utilisateur</label>
 					<span>
@@ -217,7 +217,7 @@ if(isset($_POST['submit_signup'])){
 	
 		<div class="container">
 			<div class="signup-container">
-				<form method="POST" action="">
+				<form method="POST" action="" class="red-hover">
 				
 					<div class="signup-row">
 						<div class="signup-group">
@@ -252,6 +252,10 @@ if(isset($_POST['submit_signup'])){
 							<input id="confirmPassword" type="password" name="confirmPassword" placeholder="Veuillez répéter votre mot de passe" >   
 						</div>
 					</div>
+
+					<p class="legal-notice">
+					En vous inscrivant sur Formablocs, vous consentez au traitement de vos données personnelles par Formablocs pour administrer votre compte. <br> <a href="#">Plus d’information dans notre Politique de confidentialité</a>
+					</p>
 					
 					<button class="btn" id="submit-signup_btn" type="submit" name="submit_signup">M'inscrire</button>
 					
