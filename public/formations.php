@@ -27,8 +27,8 @@ require_once (__DIR__ . '/includes/header.php');
 <section id="home-ctas">
 	<div class="container">
 		<div class="home-btns">
-			<a href="formations.php" class="blue-hover"><button>Formateur Professionnel d'Adultes</button></a>
-			<a href="financement.php" class="blue-hover"><button>Conseiller en Insertion Professionnelle</button></a>
+			<a href="formations.php#1" class="blue-hover"><button>Formateur Professionnel d'Adultes</button></a>
+			<a href="formations.php#2" class="blue-hover"><button>Conseiller en Insertion Professionnelle</button></a>
 		</div>
 	</div>
 </section>
@@ -60,7 +60,7 @@ require_once (__DIR__ . '/includes/header.php');
 			?>
 
 				<div class="formation-header">
-					<div class="formation-title">
+					<div class="formation-title" id="<?=$row['id']?>">
 						<img src="assets/icons/FLECHE ORANGE.svg" alt="">
 						<h1><?=$row['formation']?> <span>(bac+2)</span></h1>
 					</div>
@@ -112,7 +112,7 @@ require_once (__DIR__ . '/includes/header.php');
 					<?php if ( $row === reset( $rows ) ) {
 							foreach($rows2 as $row2) {?>
 
-					<div class="formation-card module">
+					<div class="formation-card module" id="1m<?=$row2['id']?>">
 						<div class="card-wrapper">
 							<h2>Module : <?=$row2['module']?></h2>
 							<p><?=$row2['description']?></p>
@@ -142,7 +142,7 @@ require_once (__DIR__ . '/includes/header.php');
 					<?php } else if( $row === end( $rows ) ) {
 					foreach($rows3 as $row3) { ?>
 							
-						<div class="formation-card module">
+						<div class="formation-card module" id="2m<?=$row3['id']?>">
 							<div class="card-wrapper">
 								<h2>Module : <?=$row3['module']?></h2>
 								<p><?=$row3['description']?></p>

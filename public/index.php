@@ -103,18 +103,18 @@ require_once (__DIR__ . '/includes/header.php');
 				<div class="formation-card-wrapper">
 					<img src="assets/icons/ROND-ORANGE.png" alt="">
 					<div class="formations-card-home fch1"></div>
-					<a href="#">Formateur Professionnel <br> d'Adultes (bac+2)</a>
+					<a href="formations.php#1">Formateur Professionnel <br> d'Adultes (bac+2)</a>
 				</div>
 
 				<div class="formation-card-wrapper">
 					<img src="assets/icons/ROND-ORANGE.png" alt="">
 					<div class="formations-card-home fch2"></div>
-					<a href="#">Conseiller en Insertion <br> Professionnelle (bac+2)</a>
+					<a href="formations.php#1">Conseiller en Insertion <br> Professionnelle (bac+2)</a>
 				</div>
 
 			</div>
 			<div class="cta-btn-home">
-				<a href="#" class="red-hover"><button>Découvrir nos formations</button></a>
+				<a href="formations.php" class="red-hover"><button>Découvrir nos formations</button></a>
 			</div>
 		</div>
 	</div>
@@ -137,7 +137,7 @@ require_once (__DIR__ . '/includes/header.php');
 									<div class="slider-card-img">
 										<img src="assets/img/people/aerial-view-hands-working-computer-white-table-office.jpg" alt="">
 									</div>
-									<a href="#">Digitalisation</a>
+									<a href="prestations.php#digitalisation">Digitalisation</a>
 								</div>
 
 								<div class="slider-card slider-relative">
@@ -146,16 +146,46 @@ require_once (__DIR__ . '/includes/header.php');
 									<div class="slider-card-img relative-img">
 										<img src="assets/img/people/christina-wocintechchat-com-4PU-OC8sW98-unsplash.jpg" alt="">
 									</div>
-									<a href="#">Qualité</a>
+									<a href="prestations.php#qualite">Qualité</a>
 								</div>
 
 								<div class="slider-card">
 									<div class="slider-card-img">
 										<img src="assets/img/people/christina-wocintechchat-com-eF7HN40WbAQ-unsplash.jpg" alt="">
 									</div>
-									<a href="#">RNCP</a>
+									<a href="prestations.php#rncp">RNCP</a>
 								</div>
 							</div>
+              
+							<div class="group-slider home2-carousel-slides">
+								<div class="slider-card">
+									<div class="slider-card-img">
+										<img src="assets/img/people/aerial-view-hands-working-computer-white-table-office.jpg" alt="">
+									</div>
+									<a href="prestations.php#digitalisation">Digitalisation</a>
+								</div>
+
+								<div class="slider-card slider-relative">
+									<img src="assets/icons/ROND ORANGE.svg" alt="">
+									<img src="assets/icons/ROND ORANGE.svg" alt="">
+									<div class="slider-card-img relative-img">
+										<img src="assets/img/people/christina-wocintechchat-com-4PU-OC8sW98-unsplash.jpg" alt="">
+									</div>
+									<a href="prestations.php#qualite">Qualité</a>
+								</div>
+
+								<div class="slider-card">
+									<div class="slider-card-img">
+										<img src="assets/img/people/christina-wocintechchat-com-eF7HN40WbAQ-unsplash.jpg" alt="">
+									</div>
+									<a href="prestations.php#qualite">RNCP</a>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="home-carousel-right-arrow">
+							<img src="<?=$domain?>/icons/FLECHE DROITE BLEUE.svg" alt="Suivant" id="next-home2">
 						</div>
 					</div>
 				</div>

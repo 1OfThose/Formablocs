@@ -37,7 +37,7 @@ require_once (__DIR__ . '/includes/header.php');
 				</div>
 
 				<div class="prestations-card prestation-slide current-slide">
-					<div class="prestation-card-top">
+					<div class="prestation-card-top" id="digitalisation">
 							<h3>Digitalisation</h3>
 							<p>Tarif : <span>2 000 € par formation</span></p>
 
@@ -69,7 +69,7 @@ require_once (__DIR__ . '/includes/header.php');
 				</div>
 
 				<div class="prestations-card prestation-slide">
-					<div class="prestation-card-top">
+					<div class="prestation-card-top" >
 						<h3>Ingénierie financière</h3>
 						<p>Tarif : <span>2 000 € par formation</span></p>
 						<div class="prestation-top-btns">
@@ -91,7 +91,7 @@ require_once (__DIR__ . '/includes/header.php');
 						</div>
 					</div>
 					<div class="prestation-card-text">
-						<p>Formablocs vous accompagne pour identifier vos charges fixes, vos charges variables, vos revenus afin d’en ressortir un seuil de rentabilité pour chaque action de formation et dégager des revenus. Nous vous proposons de co-cpnstruire avec vous, votre grille de coût personalisée pour une meilleure gestion financière de vos actions.</p>
+						<p>Formablocs vous accompagne pour identifier vos charges fixes, vos charges variables, vos revenus afin d’en ressortir un seuil de rentabilité pour chaque action de formation et dégager des revenus. Nous vous proposons de co-cpnstruire avec vous, votre grille de coût personnalisée pour une meilleure gestion financière de vos actions.</p>
 					</div>
 					<div class="carousel-dots">
 						<span></span>
@@ -111,7 +111,7 @@ require_once (__DIR__ . '/includes/header.php');
 				</div>
 
 				<div class="prestations-card prestation2-slide current-slide">
-					<div class="prestation-card-top">
+					<div class="prestation-card-top" id="qualite">
 							<h3>Qualité</h3>
 							<p>Tarif : <span>1 500 à 4 000 € selon la taille de l'organisme</span></p>
 
@@ -165,7 +165,7 @@ require_once (__DIR__ . '/includes/header.php');
 						</div>
 					</div>
 					<div class="prestation-card-text">
-						<p>Formablocs vous accompagne pour identifier vos charges fixes, vos charges variables, vos revenus afin d’en ressortir un seuil de rentabilité pour chaque action de formation et dégager des revenus. Nous vous proposons de co-cpnstruire avec vous, votre grille de coût personalisée pour une meilleure gestion financière de vos actions.</p>
+						<p>Formablocs vous accompagne pour identifier vos charges fixes, vos charges variables, vos revenus afin d’en ressortir un seuil de rentabilité pour chaque action de formation et dégager des revenus. Nous vous proposons de co-cpnstruire avec vous, votre grille de coût personnalisée pour une meilleure gestion financière de vos actions.</p>
 					</div>
 					<div class="carousel-dots">
 						<span></span>
@@ -185,7 +185,7 @@ require_once (__DIR__ . '/includes/header.php');
 				</div>
 
 				<div class="prestations-card prestation3-slide current-slide">
-					<div class="prestation-card-top">
+					<div class="prestation-card-top" id="rncp">
 							<h3>RNCP</h3>
 							<p>Tarif : <span>1 500 € par diplôme</span></p>
 
@@ -241,7 +241,7 @@ require_once (__DIR__ . '/includes/header.php');
 
 			<div class="prestations-bottom">
 				<div class="container">
-					<div class="prestation-bottom-container">
+					<div class="prestation-bottom-container" id="accompagnements">
 						<div class="prestations-header">
 							<img src="assets/icons/FLECHE ORANGE.svg" alt="">
 							<h1><span>Accompagnements</span></h1>
@@ -250,7 +250,7 @@ require_once (__DIR__ . '/includes/header.php');
 						<img src="<?=$domain?>/illustrations/ILLUSTRATION PRESTATION 2.svg" alt="Accompagnements">
 						<p>Comment accompagner des personnes en situation de handicap ? Comment organiser mes formations en alternance tout en assurant la mixité des publics ? Comment accompagner le public en reconversion ?</p>
 						<span>Pour toutes ces questions et bien d’autres nous pouvons vous aider.</span>
-						<h5>Contactez nous pour un devis personalisé !</h5>
+						<h5>Contactez nous pour un devis personnalisé !</h5>
 						<a href="contact.php" class="red-hover"><button>Nous contacter</button></a>
 					</div>
 				</div>

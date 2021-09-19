@@ -1,6 +1,6 @@
 <?php
 
-$domain = '/Projet%204/public/assets';
+$domain = 'https://forma.blocs.christopher-gauthier.com/public/assets';
 require_once (__DIR__ . '../../db/global_db.php');
 
 ?>
@@ -8,7 +8,15 @@ require_once (__DIR__ . '../../db/global_db.php');
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-	<meta charset="UTF-8">
+	<!-- Encodage en utf-8, en XHTML -->
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<!-- Encodage en utf-8, en HTML 5 -->
+	<meta charset="utf-8" />
+	
+	<!-- Encodage en iso-8859-1, en XHTML -->
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<!-- Encodage en iso-8859-1, en HTML 5 -->
+	<meta charset="iso-8859-1" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
