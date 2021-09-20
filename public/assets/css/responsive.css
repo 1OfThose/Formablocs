@@ -315,6 +315,47 @@
 	.about-title img {
 		width: 20px;
 	}
+
+	.admin-btns {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-flow: column;
+		margin-top: 30px;
+	}
+
+	.admin-btns a {
+		width: 100%;
+	}
+
+	.admin-btns button {
+		width: 100%;
+		background-color: var(--red);
+		color: white;
+		padding: 5px 15px;
+		border-radius: 50px;
+		border: none;
+		font-size: 1.1em;
+		font-weight: 200;
+		cursor: pointer;
+		margin: 10px 0;
+	}
+
+	.admin-form-container form {
+		width: 100%;
+	}
+
+	.admin-form-container h2 {
+		margin-bottom: 30px;
+	}
+
+	.admin-container table td:nth-child(4), .admin-container table td:nth-child(5) {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-flow: column;
+	}
 }
 
 @media all and (max-width: 900px) {

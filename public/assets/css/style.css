@@ -3285,7 +3285,8 @@ header {
     font-size: 2.2em;
     color: var(--blue);
     margin-bottom: 20px;
-  
+}
+
 .legal-notice {
 	text-align: center;
 	color: rgb(182, 182, 182);
@@ -3301,4 +3302,148 @@ header {
 
 .ft-col .legal-notice {
 	font-size: .7em !important;
+}
+
+/* ================================
+			 PAGE ADMIN
+================================== */
+
+#admin {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 80px 0;
+}
+
+.admin-main-container {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column;
+}
+
+.admin-btns {
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	margin-top: 30px;
+}
+
+.admin-btns button {
+	width: 100%;
+	background-color: var(--red);
+	color: white;
+	padding: 5px 15px;
+	border-radius: 50px;
+	border: none;
+	font-size: 1.1em;
+	font-weight: 200;
+	cursor: pointer;
+}
+
+.admin-container {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column;
+	margin: 50px 0;
+}
+
+.admin-container table {
+	width: 100%;
+	margin: 30px 0;
+}
+
+.admin-container table th {
+	background-color: var(--blue);
+	border-bottom: 2px solid black;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	color: white;
+	padding: 5px;
+	font-size: 1.1em;
+	font-weight: 400;
+}
+
+.admin-container table th:nth-child(2) {
+	width: 70%;
+}
+
+.admin-container table td {
+	padding: 10px 5px;
+	border-bottom: 2px solid rgb(208, 208, 208);
+}
+
+.admin-container table td:nth-child(1) {
+	text-align: center;
+}
+
+.admin-container table td:nth-child(3) {
+	text-align: right;
+}
+
+.admin-container table td:nth-child(4), .admin-container table td:nth-child(5) {
+	text-align: center;
+}
+
+.admin-form {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 40vh;
+}
+
+.admin-form-container {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column;
+	margin: 50px 0;
+}
+
+.admin-form-container form {
+	width: 35%;
+}
+
+.admin-form-container form input, .admin-form-container form textarea {
+	width: 100%;
+	padding: 10px 15px;
+	border: 0;
+	-webkit-box-shadow: 0px 0px 20px -8px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 20px -8px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 20px -8px rgba(0,0,0,0.75);
+	border-radius: 20px;
+	margin: 20px 0;
+}
+
+.admin-form-container form textarea {
+	width: 100%;
+	max-width: 100%;
+	min-height: 300px;
+	max-height: 700px;
+}
+
+.admin-form-container form button {
+	width: 100%;
+	background-color: var(--red);
+	color: white;
+	padding: 5px 15px;
+	border-radius: 50px;
+	border: none;
+	font-size: 1.1em;
+	font-weight: 200;
+	cursor: pointer;
+	margin-top: 30px;
+}
+
+.admin-main-container p a {
+	color: var(--blue);
+	font-weight: 500;
+	text-decoration: underline;
 }

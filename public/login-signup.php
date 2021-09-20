@@ -1,6 +1,6 @@
 
 <?php
-
+$page = 'login';
 require_once (__DIR__ . '/includes/header.php');
 
 ?>
@@ -46,6 +46,7 @@ require_once (__DIR__ . '/includes/header.php');
                 if(password_verify($password, $db_password)){
                     $_SESSION['user_id'] = $user['id'];
 					$_SESSION['user_name'] = $user['username'];
+					$_SESSION['user_role'] = $user['role'];
 					$URL=$domain.'/../index.php';
 					echo "<script type='text/javascript'>document.location.href='{$URL}';</script>";
 					echo '<META HTTP-EQUIV="refresh" content="0;URL=' . $URL . '">';
@@ -58,25 +59,6 @@ require_once (__DIR__ . '/includes/header.php');
                 echo "<p class=\"comments\">Vous n'êtes pas enregistrer. Veuillez vous enregistrez et reéssayer</p>";
             }
         }
-        
-    
-    /* 	if($user['role'] == "admin"){
-            if($_POST['password'] == $user['passw']) {
-                $_SESSION['user_id'] = $user['id'];
-                header("Location: admin.php");
-                exit();
-            } else {
-                echo 'Error :(';
-            }
-        } else {
-            if($_POST['password'] == $user['passw']) {
-                $_SESSION['user_id'] = $user['id'];
-                header("Location: accueil.php");
-                exit();
-            } else {
-                echo 'Error :(';
-            }
-        } */
     }
 ?>
 				<div class="login-bottom">
@@ -161,6 +143,7 @@ if(isset($_POST['submit_signup'])){
 	$email = $_POST['email'];
 	$password = $_POST['password'];
     $confirmPassword = $_POST['confirmPassword'];
+	$role = 'user';
 	
 // ================= Si les champs sont vides, ou mdp differents
 	if(empty($name) || empty($username) || empty($email) || empty($password) || empty($confirmPassword)){
@@ -191,14 +174,15 @@ if(isset($_POST['submit_signup'])){
 					]);
 
 					$customerStripeID = $newCustomer->id;
-         			$sql = "INSERT INTO customers (name, username, email, passw, stripe_id) VALUES (?, ?, ?, ?, ?)";
+         			$sql = "INSERT INTO customers (name, username, email, passw, stripe_id, role) VALUES (?, ?, ?, ?, ?, ?)";
          			$run_register_query= $pdo->prepare($sql);
-					if($run_register_query->execute([$name, $username, $email, $passHash, $customerStripeID])){
+					if($run_register_query->execute([$name, $username, $email, $passHash, $customerStripeID, $role])){
 						$user = $pdo->query("SELECT * FROM customers WHERE stripe_id='". $customerStripeID . "'");
 						$loggedIn = $user->fetch(PDO::FETCH_ASSOC);
 						
 						$_SESSION['user_id'] = $loggedIn['id'];
 						$_SESSION['user_name'] = $loggedIn['username'];
+						$_SESSION['user_role'] = $role;
 
 						$URL=$domain.'/../index.php';
 						echo "<script type='text/javascript'>document.location.href='{$URL}';</script>";

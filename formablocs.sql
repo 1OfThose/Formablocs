@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : mer. 15 sep. 2021 à 14:34
+-- Généré le : lun. 20 sep. 2021 à 17:33
 -- Version du serveur : 10.4.20-MariaDB
 -- Version de PHP : 8.0.8
 
@@ -35,15 +35,17 @@ CREATE TABLE `customers` (
   `formations` varchar(500) DEFAULT NULL,
   `passw` varchar(255) DEFAULT NULL,
   `purchased_date` varchar(255) DEFAULT NULL,
-  `username` varchar(255) DEFAULT NULL
+  `username` varchar(255) DEFAULT NULL,
+  `role` varchar(1000) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Déchargement des données de la table `customers`
 --
 
-INSERT INTO `customers` (`id`, `name`, `email`, `stripe_id`, `formations`, `passw`, `purchased_date`, `username`) VALUES
-(10, 'Carlo Cilento', 'ccarlo@hotmail.it', 'cus_KE3KnzbIZtQ7yA', NULL, '$2y$10$dbas9qpewcr4GYkEjUVrUe8rI9.kZmNkR1dE.6R7DICe3VVPbwVYK', NULL, 'ccilento');
+INSERT INTO `customers` (`id`, `name`, `email`, `stripe_id`, `formations`, `passw`, `purchased_date`, `username`, `role`) VALUES
+(10, 'Carlo Cilento', 'ccarlo@hotmail.it', 'cus_KE3KnzbIZtQ7yA', 'price_1JXq00FXn081ePt8nGT1NcVY, price_1JXplgFXn081ePt8kRuMbLc7, ', '$2y$10$dbas9qpewcr4GYkEjUVrUe8rI9.kZmNkR1dE.6R7DICe3VVPbwVYK', '15/09/2021, 15/09/2021, ', 'ccilento', 'user'),
+(11, 'admin admin', 'admin@admin.admin', 'cus_KGFmzyMvNwQP9F', NULL, '$2y$10$hnVZgN37eT.u6cBu66q1jeAVenyoK7KhmY2l5kZab6enXCmB/Jl82', NULL, 'admin', 'admin');
 
 -- --------------------------------------------------------
 
@@ -89,8 +91,8 @@ CREATE TABLE `modules_formation_adultes` (
 --
 
 INSERT INTO `modules_formation_adultes` (`id`, `module`, `price`, `price_id`, `description`, `link`) VALUES
-(1, 'Préparer et animer des actions de formation collectives en intégrant des environnements numériques (bac+2)', '1000.00', 'price_1JXpvfFXn081ePt8tJKhH5XO', 'Elaborer la progression pédagogique d’une action de formation à partir d’une demande.\nConcevoir le scénario pédagogique d’une séquence de formation intégrant différentes modalités pédagogiques.\nConcevoir les activités d’apprentissage et les ressources pédagogiques d’une séquence en prenant en compte l’environnement numérique.\nAnimer un temps de formation collectif en présence ou à distance.\nEvaluer les acquis de formation des apprenants.\nInscrire ses actes professionnels dans le cadre réglementaire et dans une démarche de responsabilité sociale, environnementale et professionnelle.\nMaintenir son niveau d’expertise et de performance en tant que formateur et professionnel dans sa spécialité.', 'forma3'),
-(2, 'Construire des parcours individualisés et  accompagner les apprenants (bac+2)', '1000.00', 'price_1JXpxeFXn081ePt8bkncllI1', 'Concevoir l’ingénierie et les outils d’individualisation des parcours en utilisant les technologies numériques.\nAccueillir les apprenants en formation et coconstruire leurs parcours.\nFormer et accompagner les apprenants dans des parcours individualisés.\nRemédier aux difficultés individuelles d’apprentissage.\nAccompagner les apprenants dans la consolidation de leur projet professionnel.\nAnalyser ses pratiques professionnelles.', 'forma4');
+(3, 'Préparer et animer des actions de formation collectives en intégrant des environnements numériques (bac+2)', '1000.00', 'price_1JXpvfFXn081ePt8tJKhH5XO', 'Elaborer la progression pédagogique d’une action de formation à partir d’une demande.\nConcevoir le scénario pédagogique d’une séquence de formation intégrant différentes modalités pédagogiques.\nConcevoir les activités d’apprentissage et les ressources pédagogiques d’une séquence en prenant en compte l’environnement numérique.\nAnimer un temps de formation collectif en présence ou à distance.\nEvaluer les acquis de formation des apprenants.\nInscrire ses actes professionnels dans le cadre réglementaire et dans une démarche de responsabilité sociale, environnementale et professionnelle.\nMaintenir son niveau d’expertise et de performance en tant que formateur et professionnel dans sa spécialité.', 'forma3'),
+(4, 'Construire des parcours individualisés et  accompagner les apprenants (bac+2)', '1000.00', 'price_1JXpxeFXn081ePt8bkncllI1', 'Concevoir l’ingénierie et les outils d’individualisation des parcours en utilisant les technologies numériques.\nAccueillir les apprenants en formation et coconstruire leurs parcours.\nFormer et accompagner les apprenants dans des parcours individualisés.\nRemédier aux difficultés individuelles d’apprentissage.\nAccompagner les apprenants dans la consolidation de leur projet professionnel.\nAnalyser ses pratiques professionnelles.', 'forma4');
 
 -- --------------------------------------------------------
 
@@ -112,9 +114,9 @@ CREATE TABLE `modules_formation_conseiller` (
 --
 
 INSERT INTO `modules_formation_conseiller` (`id`, `module`, `price`, `price_id`, `description`, `link`) VALUES
-(1, 'Accueillir pour analyser la demande des personnes et poser les bases d\'un diagnostic partagé (bac+2)\n', '1000.00', 'price_1JXq00FXn081ePt8nGT1NcVY', 'Informer une personne ou un groupe sur les ressources en matière d’insertion et les services dématérialisés ;\r\nAnalyser la demande de la personne et poser les bases d’un diagnostic partagé ;\r\nExercer une veille informationnelle, technique et prospective pour adapter son activité au public et au contexte ;\r\nTravailler en équipe, en réseau et dans un cadre partenarial pour optimiser la réponse aux besoins des personnes accueillies ;\r\nRéaliser le traitement administratif et les écrits professionnels liés à l’activité dans un environnement numérique.', 'forma5'),
-(2, 'Accompagner les personnes dans leur parcours d\'insertion sociale et professionnelle (bac+2)', '1000.00', 'price_1JXq1vFXn081ePt83mIsenWO', 'Contractualiser et suivre avec la personne son parcours d’insertion professionnelle ;\r\nAccompagner une personne à l’élaboration de son projet professionnel ;\r\nAccompagner la réalisation des projets professionnels ;\r\nConcevoir des ateliers thématiques favorisant l’insertion professionnelle des publics ;\r\nPréparer et animer des ateliers thématiques favorisant l’insertion ;\r\nAnalyser sa pratique professionnelle.', 'forma6'),
-(3, 'Mettre en œuvre une offre de services auprès des employeurs pour  favoriser l\'insertion professionnelle) (bac+2)', '1000.00', 'price_1JXq2uFXn081ePt8cGdo9Yfr', 'Déployer, dans une démarche projet, des actions de prospection avec les employeurs du territoire pour favoriser l’insertion professionnelle ;\r\nApporter un appui technique aux employeurs en matière de recrutement ;\r\nFaciliter l’intégration et le maintien du salarié dans son environnement professionnel ;\r\nInscrire ses actes professionnels dans une démarche de développement durable.\r\nCompétences transversales de l’emploi (le cas échéant) :\r\nIntégrer la prévention des risques professionnels dans son travail.', 'forma7');
+(5, 'Accueillir pour analyser la demande des personnes et poser les bases d\'un diagnostic partagé (bac+2)\n', '1000.00', 'price_1JXq00FXn081ePt8nGT1NcVY', 'Informer une personne ou un groupe sur les ressources en matière d’insertion et les services dématérialisés ;\r\nAnalyser la demande de la personne et poser les bases d’un diagnostic partagé ;\r\nExercer une veille informationnelle, technique et prospective pour adapter son activité au public et au contexte ;\r\nTravailler en équipe, en réseau et dans un cadre partenarial pour optimiser la réponse aux besoins des personnes accueillies ;\r\nRéaliser le traitement administratif et les écrits professionnels liés à l’activité dans un environnement numérique.', 'forma5'),
+(6, 'Accompagner les personnes dans leur parcours d\'insertion sociale et professionnelle (bac+2)', '1000.00', 'price_1JXq1vFXn081ePt83mIsenWO', 'Contractualiser et suivre avec la personne son parcours d’insertion professionnelle ;\r\nAccompagner une personne à l’élaboration de son projet professionnel ;\r\nAccompagner la réalisation des projets professionnels ;\r\nConcevoir des ateliers thématiques favorisant l’insertion professionnelle des publics ;\r\nPréparer et animer des ateliers thématiques favorisant l’insertion ;\r\nAnalyser sa pratique professionnelle.', 'forma6'),
+(7, 'Mettre en œuvre une offre de services auprès des employeurs pour  favoriser l\'insertion professionnelle) (bac+2)', '1000.00', 'price_1JXq2uFXn081ePt8cGdo9Yfr', 'Déployer, dans une démarche projet, des actions de prospection avec les employeurs du territoire pour favoriser l’insertion professionnelle ;\r\nApporter un appui technique aux employeurs en matière de recrutement ;\r\nFaciliter l’intégration et le maintien du salarié dans son environnement professionnel ;\r\nInscrire ses actes professionnels dans une démarche de développement durable.\r\nCompétences transversales de l’emploi (le cas échéant) :\r\nIntégrer la prévention des risques professionnels dans son travail.', 'forma7');
 
 -- --------------------------------------------------------
 
@@ -128,19 +130,19 @@ CREATE TABLE `prestations` (
   `price` decimal(10,2) NOT NULL,
   `price_id` varchar(255) DEFAULT NULL,
   `picto` varchar(255) DEFAULT NULL,
-  `description` longtext DEFAULT NULL
+  `link` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Déchargement des données de la table `prestations`
 --
 
-INSERT INTO `prestations` (`id`, `prestation`, `price`, `price_id`, `picto`, `description`) VALUES
-(1, 'Digitalisation', '2000.00', 'price_1JXq6KFXn081ePt8FBVcufIG', 'ICONE ACCOMPAGNEMENT - PROFIL.svg', NULL),
-(2, 'Qualité', '2000.00', 'price_1JXq7XFXn081ePt8QgP49o76', 'ICONE ACCOMPAGNEMENT - PROFIL.svg', NULL),
-(3, 'RNCP', '1500.00', 'price_1JXq8MFXn081ePt8oeg5Taql', 'ICONE ACCOMPAGNEMENT - PROFIL.svg', NULL),
-(4, 'Ingénierie financière', '1000.00', 'price_1JXq96FXn081ePt8I9iEyOPP', 'ICONE ACCOMPAGNEMENT - PROFIL.svg', NULL),
-(5, 'Bilan pédagogique', '900.00', 'price_1JXq9hFXn081ePt81CCe8hkY', 'ICONE ACCOMPAGNEMENT - PROFIL.svg', NULL);
+INSERT INTO `prestations` (`id`, `prestation`, `price`, `price_id`, `picto`, `link`) VALUES
+(1, 'Digitalisation', '2000.00', 'price_1JXq6KFXn081ePt8FBVcufIG', 'ICONE ACCOMPAGNEMENT - PROFIL.svg', 'Digitalisation'),
+(3, 'RNCP', '1500.00', 'price_1JXq8MFXn081ePt8oeg5Taql', 'ICONE ACCOMPAGNEMENT - PROFIL.svg', 'RNCP'),
+(4, 'Ingénierie financière', '1000.00', 'price_1JXq96FXn081ePt8I9iEyOPP', 'ICONE ACCOMPAGNEMENT - PROFIL.svg', 'inge'),
+(5, 'Bilan pédagogique', '900.00', 'price_1JXq9hFXn081ePt81CCe8hkY', 'ICONE ACCOMPAGNEMENT - PROFIL.svg', 'bilan'),
+(11, 'Qualité', '1000.00', 'price_1JXq7XFXn081ePt8QgP49o76', 'ICONE ACCOMPAGNEMENT - PROFIL.svg', 'quality');
 
 -- --------------------------------------------------------
 
@@ -222,7 +224,7 @@ ALTER TABLE `toutes_formations`
 -- AUTO_INCREMENT pour la table `customers`
 --
 ALTER TABLE `customers`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT pour la table `formations`
@@ -240,19 +242,19 @@ ALTER TABLE `modules_formation_adultes`
 -- AUTO_INCREMENT pour la table `modules_formation_conseiller`
 --
 ALTER TABLE `modules_formation_conseiller`
-  MODIFY `id` int(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT pour la table `prestations`
 --
 ALTER TABLE `prestations`
-  MODIFY `id` int(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 
 --
 -- AUTO_INCREMENT pour la table `toutes_formations`
 --
 ALTER TABLE `toutes_formations`
-  MODIFY `id` int(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` int(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

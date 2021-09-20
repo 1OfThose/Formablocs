@@ -1,6 +1,7 @@
 <?php
 
-$domain = 'https://forma.blocs.christopher-gauthier.com/public/assets';
+/* $domain = 'https://forma.blocs.christopher-gauthier.com/public/assets'; */
+$domain = '/Projet%204/public/assets';
 require_once (__DIR__ . '../../db/global_db.php');
 
 ?>
@@ -20,7 +21,7 @@ require_once (__DIR__ . '../../db/global_db.php');
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<title>Formablocs <?php if($page == 'formations'){echo '| Formations';} elseif ($page == 'prestations'){echo '| Prestations';} elseif ($page == 'financement'){echo '| Financement';} elseif ($page == 'contact'){echo '| Contact';} elseif ($page == 'forum'){echo '| Forum';} elseif ($page == 'user'){echo '| Mon Compte';} elseif ($page == 'home'){echo '| Accueil';} elseif ($page == 'succes'){echo '| Succes';} elseif ($page == 'erreur'){echo '| Erreur';} elseif ($page == 'devis'){echo '| Devis';} ?></title>
+	<title>Formablocs <?php if($page == 'formations'){echo '| Formations';} elseif ($page == 'prestations'){echo '| Prestations';} elseif ($page == 'financement'){echo '| Financement';} elseif ($page == 'contact'){echo '| Contact';} elseif ($page == 'forum'){echo '| Forum';} elseif ($page == 'user'){echo '| Mon Compte';} elseif ($page == 'home'){echo '| Accueil';} elseif ($page == 'succes'){echo '| Succes';} elseif ($page == 'erreur'){echo '| Erreur';} elseif ($page == 'devis'){echo '| Devis';} elseif ($page == 'login'){echo '| Login';} elseif ($page == 'admin'){echo '| Admin';} ?></title>
 
 	<!-- ================ ICONS ================ -->
 	<link rel="apple-touch-icon" href="<?=$domain?>/icons/favicon-apple.png">

@@ -19,10 +19,18 @@
 
 				<a href="<?=$domain?>/../index.php"><img src="<?=$domain?>/icons/MAISON BLANCHE.svg" alt="Accueil"></a>
 
-				<?php if (isset($_SESSION['user_id'])) { ?>
+				<?php if (isset($_SESSION['user_id']) && $_SESSION['user_role'] == "user") { ?>
 					<a href="<?=$domain?>/../includes/logout.php"><img src="<?=$domain?>/icons/SE DECONNECTER.svg" alt="Déconnexion"></a>
 					<div class="user-account">
 						<a class="user-icon" href="<?=$domain?>/../users/user.php">
+							<img src="<?=$domain?>/icons/USER.svg" alt="Votre compte"> 
+							<span><?php echo $_SESSION['user_name']?></span> 
+						</a>
+					</div>
+				<?php } elseif (isset($_SESSION['user_id']) && $_SESSION['user_role'] == "admin") { ?>
+					<a href="<?=$domain?>/../includes/logout.php"><img src="<?=$domain?>/icons/SE DECONNECTER.svg" alt="Déconnexion"></a>
+					<div class="user-account">
+						<a class="user-icon" href="<?=$domain?>/../users/admin/admin.php">
 							<img src="<?=$domain?>/icons/USER.svg" alt="Votre compte"> 
 							<span><?php echo $_SESSION['user_name']?></span> 
 						</a>
