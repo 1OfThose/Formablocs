@@ -241,7 +241,7 @@ if(isset($_POST['submit_signup'])){
 					</div>
 
 					<p class="legal-notice">
-					En vous inscrivant sur Formablocs, vous consentez au traitement de vos données personnelles par Formablocs pour administrer votre compte. <br> <a href="#">Plus d’information dans notre Politique de confidentialité</a>
+					En vous inscrivant sur Formablocs, vous consentez au traitement de vos données personnelles par Formablocs pour administrer votre compte. <br> <a href="<?=$domain?>/../confidentialite.php">Plus d’information dans notre Politique de confidentialité</a>
 					</p>
 					
 					<button class="btn" id="submit-signup_btn" type="submit" name="submit_signup">M'inscrire</button>

@@ -16,6 +16,9 @@
 }
 
 @media all and (max-width: 1280px) {
+	#mentions_legales, #cgu, #cgv, #confidentialite{
+		margin: 0px;
+	}
 	.categories-formations {
 		flex-flow: column;
 	}
