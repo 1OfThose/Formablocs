@@ -13,7 +13,8 @@
 				</div>
 				<p>
 					<span>Tél : </span><i itemprop="telephone">02 00 99 11 88</i><br>
-					<span>E-mail : </span><i itemprop="email">contact@formablocs.com</i>
+					<span>E-mail : </span><i itemprop="email">contact@formablocs.com</i><br>
+					<span>N° SIRET : 522 365 568 000 13</span>
 				</p>
 			</div>
 			<div class="ft-col">
