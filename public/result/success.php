@@ -62,7 +62,7 @@ require_once (__DIR__ . '/../includes/header.php');
 				<h1>Confirmation de votre commande</h1>
 				<img src="<?=$domain?>/illustrations/ILLUSTRATIONS PAIEMENT SUCCES.svg" alt="">
 				<div class="recap-success">
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus?</p>
+					<p></p>
 				</div>
 			</div>
 			<div class="success-bottom">
