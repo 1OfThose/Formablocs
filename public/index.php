@@ -184,9 +184,6 @@ require_once (__DIR__ . '/includes/header.php');
 
 						</div>
 
-						<div class="home-carousel-right-arrow">
-							<img src="<?=$domain?>/icons/FLECHE DROITE BLEUE.svg" alt="Suivant" id="next-home2">
-						</div>
 					</div>
 				</div>
 
