@@ -429,7 +429,7 @@
 		display: none;
 	}
 	
-	.home-bg-v2 a::before {
+	.home-bg-v2::before {
 		content: url('../icons/ROND\ ORANGE.svg');
 		position: absolute;
 		width: 80px;
@@ -443,7 +443,7 @@
 		z-index: 5;
 	}
 
-	.home-bg a::before {
+	.home-bg::before {
 		content: url('../icons/ROND\ ORANGE.svg');
 		position: absolute;
 		width: 80px;
