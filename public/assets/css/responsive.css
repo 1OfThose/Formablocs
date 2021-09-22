@@ -419,12 +419,12 @@
 		box-shadow: 0px 0px 21px -8px rgba(0,0,0,0.75);
 	}
 
-	.home-bg a::after {
+	.home-bg::after {
 		content: '';
 		display: none;
 	}
 
-	.home-bg-v2 a::after {
+	.home-bg-v2::after {
 		content: '';
 		display: none;
 	}
