@@ -49,8 +49,8 @@
 				<form action="#" method="POST" class="red-hover">
 					<input type="email" required placeholder="Entrez votre adresse mail">
 					<button type="submit">S'inscrire</button>
-					<p class="legal-notice">En nous confiant votre adresse e-mail, vous consentez à recevoir des lettres d’informations (newsletter) de la part de Formablocs. Vous pouvez vous désinscrire à tout moment en cliquant sur le lien « se désinscrire » en bas de la newsletter reçue. <br> <a href="#">Plus d’information dans notre Politique de confidentialité</a> </p>
 				</form>
+				<p class="legal-notice">En nous confiant votre adresse e-mail, vous consentez à recevoir des lettres d’informations (newsletter) de la part de Formablocs. Vous pouvez vous désinscrire à tout moment en cliquant sur le lien « se désinscrire » en bas de la newsletter reçue. <br> <a href="#">Plus d’information dans notre Politique de confidentialité</a> </p>
 			</div>
 		</div>
 	</div>
