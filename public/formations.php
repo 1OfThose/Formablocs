@@ -1,6 +1,6 @@
 <?php
 
-	require_once (__DIR__ . '/db/global_db.php');
+	require_once (__DIR__ . '/db/global_db');
 	$stm = $pdo->query("SELECT * FROM formations");
 	$rows = $stm->fetchall(PDO::FETCH_ASSOC);
 
@@ -28,8 +28,8 @@ require_once (__DIR__ . '/includes/header.php');
 <section id="home-ctas">
 	<div class="container">
 		<div class="home-btns">
-			<a href="formations.php#1" class="blue-hover"><button>Formateur Professionnel d'Adultes</button></a>
-			<a href="formations.php#2" class="blue-hover"><button>Conseiller en Insertion Professionnelle</button></a>
+			<a href="formations#1" class="blue-hover"><button>Formateur Professionnel d'Adultes</button></a>
+			<a href="formations#2" class="blue-hover"><button>Conseiller en Insertion Professionnelle</button></a>
 		</div>
 	</div>
 </section>
@@ -47,7 +47,7 @@ require_once (__DIR__ . '/includes/header.php');
 				<p>Direction sur : <a href="https://www.vae.gouv.fr/">https://www.vae.gouv.fr/</a></p>
 			</div>
 
-			<a href="financement.php" class="red-hover"><button>Mes options de financement</button></a>
+			<a href="financement" class="red-hover"><button>Mes options de financement</button></a>
 		</div>
 	</div>
 </div>
@@ -85,22 +85,22 @@ require_once (__DIR__ . '/includes/header.php');
 								$formation = explode(', ',$user['formations']);
 								if(!in_array($price_id, $formation)){
 							?>
-								<form action="../checkout-session.php?link=<?=$row['link']?>" method="POST" class="red-hover">
+								<form action="../checkout-session?link=<?=$row['link']?>" method="POST" class="red-hover">
 									<button type="submit" class="">Acheter cette formation</button>
 								</form>
-								<form action="../create-quote.php?link=<?=$row['link']?>" method="POST" class="red-hover">
+								<form action="../create-quote?link=<?=$row['link']?>" method="POST" class="red-hover">
 									<button type="submit">Obtenir un devis</button>
 								</form>
 								<?php } else { ?>
-									<form action="<?=$domain?>/../users/user.php" method="POST" class="red-hover already_purchased">
+									<form action="<?=$domain?>/../users/user" method="POST" class="red-hover already_purchased">
 										<button type="submit" class="">Formation acheté</button>
 									</form>
 								<?php } ?>
 							<?php } else { ?>
-								<form action="login-signup.php" method="POST" class="red-hover">
+								<form action="login-signup" method="POST" class="red-hover">
 									<button type="submit">Acheter cette formation</button>
 								</form>
-								<form action="login-signup.php" method="POST" class="red-hover">
+								<form action="login-signup" method="POST" class="red-hover">
 									<button type="submit">Obtenir un devis</button>
 								</form>
 							<?php } ?>
@@ -119,17 +119,17 @@ require_once (__DIR__ . '/includes/header.php');
 							<p><?=$row2['description']?></p>
 							<div class="card-btns">
 							<?php if (isset($_SESSION['user_id'])) { ?>
-								<form action="../checkout-session.php?link=<?=$row2["link"]?>" method="POST" class="red-hover">
+								<form action="../checkout-session?link=<?=$row2["link"]?>" method="POST" class="red-hover">
 									<button type="submit">Acheter ce module</button>
 								</form>
-								<form action="../create-quote.php?link=<?=$row2["link"]?>" method="POST" class="red-hover">
+								<form action="../create-quote?link=<?=$row2["link"]?>" method="POST" class="red-hover">
 									<button type="submit">Obtenir un devis</button>
 								</form>
 							<?php } else { ?>
-								<form action="login-signup.php" method="POST" class="red-hover">
+								<form action="login-signup" method="POST" class="red-hover">
 									<button type="submit">Acheter ce module</button>
 								</form>
-								<form action="login-signup.php" method="POST" class="red-hover">
+								<form action="login-signup" method="POST" class="red-hover">
 									<button type="submit">Obtenir un devis</button>
 								</form>
 							<?php } ?>
@@ -149,17 +149,17 @@ require_once (__DIR__ . '/includes/header.php');
 								<p><?=$row3['description']?></p>
 								<div class="card-btns">
 								<?php if (isset($_SESSION['user_id'])) { ?>
-									<form action="../checkout-session.php?link=<?=$row3["link"]?>" method="POST" class="red-hover">
+									<form action="../checkout-session?link=<?=$row3["link"]?>" method="POST" class="red-hover">
 										<button type="submit">Acheter ce module</button>
 									</form>
-									<form action="../create-quote.php?link=<?=$row3["link"]?>" method="POST" class="red-hover">
+									<form action="../create-quote?link=<?=$row3["link"]?>" method="POST" class="red-hover">
 										<button type="submit">Obtenir un devis</button>
 									</form>
 								<?php } else { ?>
-									<form action="login-signup.php" method="POST" class="red-hover">
+									<form action="login-signup" method="POST" class="red-hover">
 										<button type="submit">Acheter ce module</button>
 									</form>
-									<form action="login-signup.php" method="POST" class="red-hover">
+									<form action="login-signup" method="POST" class="red-hover">
 										<button type="submit">Obtenir un devis</button>
 									</form>
 								<?php } ?>
@@ -179,7 +179,7 @@ require_once (__DIR__ . '/includes/header.php');
 				<h1>Comment financer ma formation ?</h1>
 			</div>
 			<p>Des solutions de financement existent selon les cas et parfois même sans perte de rémunération. Consultez notre page dédiée pour voir les options selon votre situation. Vous pouvez aussi nous contacter pour que l’on vous accompagne dans vos démarches !</p>
-			<a href="financement.php" class="red-hover"><button>En savoir plus</button></a>
+			<a href="financement" class="red-hover"><button>En savoir plus</button></a>
 		</div>
 		<img src="<?=$domain?>/illustrations/ILLUSTRATION _COMMENT FINANCER MA FORMATION_.svg" alt="">
 	</div>
@@ -189,6 +189,6 @@ require_once (__DIR__ . '/includes/header.php');
 
 <?php
 
-require_once (__DIR__ . '/includes/footer.php');
+require_once (__DIR__ . '/includes/footer');
 
 ?>

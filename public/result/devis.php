@@ -1,8 +1,8 @@
 
 <?php
 
-require_once (__DIR__ . '/../db/global_db.php');
-require '../../vendor/autoload.php';
+require_once (__DIR__ . '/../db/global_db');
+require '../../vendor/autoload';
 
 $dotenv = Dotenv\Dotenv::createMutable(__DIR__ . '/../../');
 $dotenv->load();
@@ -25,7 +25,7 @@ fclose($myfile);
 
 <?php
 $page = 'devis';
-require_once (__DIR__ . '/../includes/header.php');
+require_once (__DIR__ . '/../includes/header');
 
 ?>
 
@@ -52,6 +52,6 @@ require_once (__DIR__ . '/../includes/header.php');
 
 <?php
 
-require_once (__DIR__ . '/../includes/footer.php');
+require_once (__DIR__ . '/../includes/footer');
 
 ?>

@@ -1,6 +1,6 @@
 <?php
 $page = 'erreur';
-require_once (__DIR__ . '/../includes/header.php');
+require_once (__DIR__ . '/../includes/header');
 
 ?>
 
@@ -10,13 +10,13 @@ require_once (__DIR__ . '/../includes/header.php');
 			<h1>Votre commande n'a pas pu aboutir</h1>
 			<img src="<?$domain?>/illustrations/ILLUSTRATION ECHEC.svg" alt="">
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus?</p>
-			<a href="<?$domain?>/../index.php"><button>Retour à l'accueil</button></a>
+			<a href="<?$domain?>/../index"><button>Retour à l'accueil</button></a>
 		</div>
 	</div>
 </section>
 
 <?php
 
-require_once (__DIR__ . '/../includes/footer.php');
+require_once (__DIR__ . '/../includes/footer');
 
 ?>

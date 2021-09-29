@@ -14,8 +14,8 @@ require_once (__DIR__ . '/includes/header.php');
 <section id="home-ctas">
 	<div class="container">
 		<div class="home-btns">
-			<a href="formations.php" class="smaller-text blue-hover"><button>Formation pour les professionnels de la formation</button></a>
-			<a href="financement.php" class="blue-hover"><button>Accompagnements</button></a>
+			<a href="formations" class="smaller-text blue-hover"><button>Formation pour les professionnels de la formation</button></a>
+			<a href="financement" class="blue-hover"><button>Accompagnements</button></a>
 		</div>
 	</div>
 </section>
@@ -43,17 +43,17 @@ require_once (__DIR__ . '/includes/header.php');
 
 							<div class="prestation-top-btns">
 								<?php if (isset($_SESSION['user_id'])) { ?>
-									<form action="../checkout-session.php?link=Digitalisation" method="POST" class="red-hover">
+									<form action="../checkout-session?link=Digitalisation" method="POST" class="red-hover">
 										<button type="submit">Acheter cette prestation</button>
 									</form>
-									<form action="../create-quote.php?link=Digitalisation" method="POST" class="red-hover">
+									<form action="../create-quote?link=Digitalisation" method="POST" class="red-hover">
 										<button type="submit">Obtenir un devis</button>
 									</form>
 								<?php } else { ?>
-									<form action="login-signup.php" method="POST" class="red-hover">
+									<form action="login-signup" method="POST" class="red-hover">
 										<button type="submit">Acheter cette prestation</button>
 									</form>
-									<form action="login-signup.php" method="POST" class="red-hover">
+									<form action="login-signup" method="POST" class="red-hover">
 										<button type="submit">Obtenir un devis</button>
 									</form>
 								<?php } ?>
@@ -74,17 +74,17 @@ require_once (__DIR__ . '/includes/header.php');
 						<p>Tarif : <span>2 000 € par formation</span></p>
 						<div class="prestation-top-btns">
 							<?php if (isset($_SESSION['user_id'])) { ?>
-								<form action="../checkout-session.php?link=inge" method="POST" class="red-hover">
+								<form action="../checkout-session?link=inge" method="POST" class="red-hover">
 									<button type="submit">Acheter cette prestation</button>
 								</form>
-								<form action="../create-quote.php?formation=inge" method="POST" class="red-hover">
+								<form action="../create-quote?formation=inge" method="POST" class="red-hover">
 									<button type="submit">Obtenir un devis</button>
 								</form>
 							<?php } else { ?>
-								<form action="login-signup.php" method="POST" class="red-hover">
+								<form action="login-signup" method="POST" class="red-hover">
 									<button type="submit">Acheter cette prestation</button>
 								</form>
-								<form action="login-signup.php" method="POST" class="red-hover">
+								<form action="login-signup" method="POST" class="red-hover">
 									<button type="submit">Obtenir un devis</button>
 								</form>
 							<?php } ?>
@@ -117,17 +117,17 @@ require_once (__DIR__ . '/includes/header.php');
 
 							<div class="prestation-top-btns">
 								<?php if (isset($_SESSION['user_id'])) { ?>
-									<form action="../checkout-session.php?link=quality" method="POST" class="red-hover">
+									<form action="../checkout-session?link=quality" method="POST" class="red-hover">
 										<button type="submit">Acheter cette prestation</button>
 									</form>
-									<form action="../create-quote.php?link=quality" method="POST" class="red-hover">
+									<form action="../create-quote?link=quality" method="POST" class="red-hover">
 										<button type="submit">Obtenir un devis</button>
 									</form>
 								<?php } else { ?>
-									<form action="login-signup.php" method="POST" class="red-hover">
+									<form action="login-signup" method="POST" class="red-hover">
 										<button type="submit">Acheter cette prestation</button>
 									</form>
-									<form action="login-signup.php" method="POST" class="red-hover">
+									<form action="login-signup" method="POST" class="red-hover">
 										<button type="submit">Obtenir un devis</button>
 									</form>
 								<?php } ?>
@@ -148,17 +148,17 @@ require_once (__DIR__ . '/includes/header.php');
 						<p>Tarif : <span>900 €</span></p>
 						<div class="prestation-top-btns">
 							<?php if (isset($_SESSION['user_id'])) { ?>
-								<form action="../checkout-session.php?link=bilan" method="POST" class="red-hover">
+								<form action="../checkout-session?link=bilan" method="POST" class="red-hover">
 									<button type="submit">Acheter cette prestation</button>
 								</form>
-								<form action="../create-quote.php?link=bilan" method="POST" class="red-hover">
+								<form action="../create-quote?link=bilan" method="POST" class="red-hover">
 									<button type="submit">Obtenir un devis</button>
 								</form>
 							<?php } else { ?>
-								<form action="login-signup.php" method="POST" class="red-hover">
+								<form action="login-signup" method="POST" class="red-hover">
 									<button type="submit">Acheter cette prestation</button>
 								</form>
-								<form action="login-signup.php" method="POST" class="red-hover">
+								<form action="login-signup" method="POST" class="red-hover">
 									<button type="submit">Obtenir un devis</button>
 								</form>
 							<?php } ?>
@@ -191,17 +191,17 @@ require_once (__DIR__ . '/includes/header.php');
 
 							<div class="prestation-top-btns">
 								<?php if (isset($_SESSION['user_id'])) { ?>
-									<form action="../checkout-session.php?link=RNCP" method="POST" class="red-hover">
+									<form action="../checkout-session?link=RNCP" method="POST" class="red-hover">
 										<button type="submit">Acheter cette prestation</button>
 									</form>
-									<form action="../create-quote.php?link=RNCP" method="POST" class="red-hover">
+									<form action="../create-quote?link=RNCP" method="POST" class="red-hover">
 										<button type="submit">Obtenir un devis</button>
 									</form>
 								<?php } else { ?>
-									<form action="login-signup.php" method="POST" class="red-hover">
+									<form action="login-signup" method="POST" class="red-hover">
 										<button type="submit">Acheter cette prestation</button>
 									</form>
-									<form action="login-signup.php" method="POST" class="red-hover">
+									<form action="login-signup" method="POST" class="red-hover">
 										<button type="submit">Obtenir un devis</button>
 									</form>
 								<?php } ?>
@@ -221,7 +221,7 @@ require_once (__DIR__ . '/includes/header.php');
 						<h3>Ingénierie pédagogique </h3>
 						<p>Tarif : <span>40€/h</span></p>
 						<div class="prestation-top-btns">
-							<a href="contact.php" class="red-hover"><button>Nous contacter</button></a>
+							<a href="contact" class="red-hover"><button>Nous contacter</button></a>
 						</div>
 					</div>
 					<div class="prestation-card-text">
@@ -251,7 +251,7 @@ require_once (__DIR__ . '/includes/header.php');
 						<p>Comment accompagner des personnes en situation de handicap ? Comment organiser mes formations en alternance tout en assurant la mixité des publics ? Comment accompagner le public en reconversion ?</p>
 						<span>Pour toutes ces questions et bien d’autres nous pouvons vous aider.</span>
 						<h5>Contactez nous pour un devis personnalisé !</h5>
-						<a href="contact.php" class="red-hover"><button>Nous contacter</button></a>
+						<a href="contact" class="red-hover"><button>Nous contacter</button></a>
 					</div>
 				</div>
 			</div>
@@ -263,6 +263,6 @@ require_once (__DIR__ . '/includes/header.php');
 <script src="<?=$domain?>/js/carousel-prestations.js"></script>
 <?php
 
-require_once (__DIR__ . '/includes/footer.php');
+require_once (__DIR__ . '/includes/footer');
 
 ?>

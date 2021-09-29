@@ -2,7 +2,7 @@
 <footer>
 	<div class="container">
 		<div class="foot-cols">			
-			<div class="ft-col" itemscope itemtype="https://schema.org/Organization">
+			<div class="ft-col" itemscope itemtype="https://schema.org/Organization.php">
 				<img itemprop="logo" src="<?=$domain?>/img/LOGO FOOTER.svg" alt="">
 				<p>c'est un accompagnement individualisé, un parcours adapté à vos contraintes</p>
 				<div class="ft-icons">
@@ -20,27 +20,27 @@
 			<div class="ft-col">
 				<h3>Nos prestations de conseil</h3>
 				<ul>
-					<li><a href="<?=$domain?>/../prestations.php#digitalisation">Digitalisation</a></li>
-					<li><a href="<?=$domain?>/../prestations.php#qualite">Qualité</a></li>
-					<li><a href="<?=$domain?>/../prestations.php#rncp">RNCP</a></li>
-					<li><a href="<?=$domain?>/../prestations.php">Tout voir</a></li>
+					<li><a href="<?=$domain?>/../prestations#digitalisation">Digitalisation</a></li>
+					<li><a href="<?=$domain?>/../prestations#qualite">Qualité</a></li>
+					<li><a href="<?=$domain?>/../prestations#rncp">RNCP</a></li>
+					<li><a href="<?=$domain?>/../prestations">Tout voir</a></li>
 				</ul>
 			</div>
 			<div class="ft-col">
 				<h3>Nos formations</h3>
 				<ul>
-					<li><a href="<?=$domain?>/../formations.php#1">Formateur Professionnel d'Adultes</a></li>
-					<li><a href="<?=$domain?>/../formations.php#2">Conseiller en Insertion Professionnelle</a></li>
+					<li><a href="<?=$domain?>/../formations#1">Formateur Professionnel d'Adultes</a></li>
+					<li><a href="<?=$domain?>/../formations#2">Conseiller en Insertion Professionnelle</a></li>
 				</ul>
 			</div>
 			<div class="ft-col">
 				<h3>Nos certifications</h3>
 				<ul>
-					<li><a href="<?=$domain?>/../formations.php#1m1">Certification 1</a></li>
-					<li><a href="<?=$domain?>/../formations.php#1m2">Certification 2</a></li>
-					<li><a href="<?=$domain?>/../formations.php#2m1">Certification 3</a></li>
-					<li><a href="<?=$domain?>/../formations.php#2m2">Certification 4</a></li>
-					<li><a href="<?=$domain?>/../formations.php#2m3">Certification 5</a></li>
+					<li><a href="<?=$domain?>/../formations#1m1">Certification 1</a></li>
+					<li><a href="<?=$domain?>/../formations#1m2">Certification 2</a></li>
+					<li><a href="<?=$domain?>/../formations#2m1">Certification 3</a></li>
+					<li><a href="<?=$domain?>/../formations#2m2">Certification 4</a></li>
+					<li><a href="<?=$domain?>/../formations#2m3">Certification 5</a></li>
 				</ul>
 			</div>
 			<div class="ft-col">
@@ -58,10 +58,10 @@
 		<div class="container">
 			<div class="footer-links">
 
-				<a href="<?=$domain?>/../mentions_legales.php">Mentions légales</a>
-				<a href="<?=$domain?>/../confidentialite.php">Politique de confidentialité</a>
-				<a href="<?=$domain?>/../CGU.php">Conditions générales d'utilisation</a>
-				<a href="<?=$domain?>/../CGV.php">Conditions générales de vente</a>
+				<a href="<?=$domain?>/../mentions_legales">Mentions légales</a>
+				<a href="<?=$domain?>/../confidentialite">Politique de confidentialité</a>
+				<a href="<?=$domain?>/../CGU">Conditions générales d'utilisation</a>
+				<a href="<?=$domain?>/../CGV">Conditions générales de vente</a>
 
 			</div>
 		</div>
