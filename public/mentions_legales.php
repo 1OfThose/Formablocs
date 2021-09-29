@@ -162,6 +162,6 @@ La durée de vie de ces cookies est de treize mois.</p>
 
 <?php
 
-require_once (__DIR__ . '/includes/footer.php');
+require_once (__DIR__ . '/includes/footer');
 
 ?>

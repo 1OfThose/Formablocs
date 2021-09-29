@@ -1,7 +1,7 @@
 <?php
 
-require_once (__DIR__ . '/../db/global_db.php');
-require '../../vendor/autoload.php';
+require_once (__DIR__ . '/../db/global_db');
+require '../../vendor/autoload';
 
 $dotenv = Dotenv\Dotenv::createMutable(__DIR__ . '/../../');
 $dotenv->load();
@@ -51,7 +51,7 @@ if(!in_array($priceID, $array_formation)){
 
 <?php
 $page = 'succes';
-require_once (__DIR__ . '/../includes/header.php');
+require_once (__DIR__ . '/../includes/header');
 
 ?>
 
@@ -69,7 +69,7 @@ require_once (__DIR__ . '/../includes/header.php');
 				<h1>Merci beaucoup pour votre achat !</h1>
 				<h4>Un reçu vous a été envoyé sur votre boîte mail.</h4>
 				<p>Si vous n'avez rien reçu, veuillez cliquez <a href="#">ici</a></p>
-				<a href="<?=$domain?>/../index.php"><button>Retour à l'accueil</button></a>
+				<a href="<?=$domain?>/../index"><button>Retour à l'accueil</button></a>
 			</div>
 		</div>
 	</div>
@@ -79,6 +79,6 @@ require_once (__DIR__ . '/../includes/header.php');
 
 <?php
 
-require_once (__DIR__ . '/../includes/footer.php');
+require_once (__DIR__ . '/../includes/footer');
 
 ?>
