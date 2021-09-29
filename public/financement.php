@@ -1,7 +1,7 @@
 <?php
 
 $page ='financement';
-require_once (__DIR__ . '/includes/header');
+require_once (__DIR__ . '/includes/header.php');
 
 ?>
 
@@ -247,6 +247,6 @@ require_once (__DIR__ . '/includes/header');
 <script src="<?=$domain?>/js/carousel.js"></script>
 <?php
 
-require_once (__DIR__ . '/includes/footer');
+require_once (__DIR__ . '/includes/footer.php');
 
 ?>

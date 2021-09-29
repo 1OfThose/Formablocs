@@ -167,6 +167,6 @@ require_once (__DIR__ . '/includes/header.php');
 <script src="<?=$domain?>/js/trier.js"></script>
 <?php
 
-require_once (__DIR__ . '/includes/footer');
+require_once (__DIR__ . '/includes/footer.php');
 
 ?>

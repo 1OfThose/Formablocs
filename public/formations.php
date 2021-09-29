@@ -1,6 +1,6 @@
 <?php
 
-	require_once (__DIR__ . '/db/global_db');
+	require_once (__DIR__ . '/db/global_db.php');
 	$stm = $pdo->query("SELECT * FROM formations");
 	$rows = $stm->fetchall(PDO::FETCH_ASSOC);
 
@@ -189,6 +189,6 @@ require_once (__DIR__ . '/includes/header.php');
 
 <?php
 
-require_once (__DIR__ . '/includes/footer');
+require_once (__DIR__ . '/includes/footer.php');
 
 ?>
