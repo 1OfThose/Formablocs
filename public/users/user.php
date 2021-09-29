@@ -16,9 +16,8 @@ $dateArray = explode(', ', $formationsDate);
 
 $objetFormations = (object) $formationArray;
 $objetDate = (object) $dateArray;
-
 foreach ($formationArray as $price_f) {
-    $nomFormation = $pdo->query("SELECT * FROM toutes_formations WHERE price_id = \"$price_f\"");
+	$nomFormation = $pdo->query("SELECT * FROM toutes_formations WHERE price_id = \"$price_f\"");
 	$form = $nomFormation->fetchall(PDO::FETCH_ASSOC);
 	$name = $form[0]['formation'];
 	$picto = $form[0]['picto'];
