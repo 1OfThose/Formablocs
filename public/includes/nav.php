@@ -17,7 +17,7 @@
 			</div>
 			<div class="right-icons">
 
-				<a href="<?=$domain?>/../index"><img src="<?=$domain?>/icons/MAISON BLANCHE.svg" alt="Accueil"></a>
+				<a href="<?=$domain?>/../index.php"><img src="<?=$domain?>/icons/MAISON BLANCHE.svg" alt="Accueil"></a>
 
 				<?php if (isset($_SESSION['user_id']) && $_SESSION['user_role'] == "user") { ?>
 					<a href="<?=$domain?>/../includes/logout.php"><img src="<?=$domain?>/icons/SE DECONNECTER.svg" alt="Déconnexion"></a>
@@ -37,7 +37,7 @@
 					</div>
 				<?php } else { ?>
 					<div class="user-account">
-						<a class="user-icon" href="<?=$domain?>/../login-signup">
+						<a class="user-icon" href="<?=$domain?>/../login-signup.php">
 							<img src="<?=$domain?>/icons/USER.svg" alt="Login"> 
 							<span>Se connecter</span> 
 						</a>
@@ -52,7 +52,7 @@
 	<div class="container">
 		<div class="nav">
 			<div class="logo">
-				<a href="<?=$domain?>/../index"><img src="<?=$domain?>/img/logo.png" alt="Formablocs | Accueil"></a>
+				<a href="<?=$domain?>/../index.php"><img src="<?=$domain?>/img/logo.png" alt="Formablocs | Accueil"></a>
 			</div>
 			<div class="burger">
 				<div class="line1"></div>
@@ -61,11 +61,11 @@
 			</div>
 			<div class="navlinks">
 				<ul class="navlist">
-					<li class="linko"><a href="<?=$domain?>/../formations" class="underline <?php if($page == 'formations'){echo 'active';} ?>">Nos formations</a></li>
-					<li class="linko"><a href="<?=$domain?>/../prestations" class="underline <?php if($page == 'prestations'){echo 'active';} ?>">Nos prestations de conseil</a></li>
-					<li class="linko"><a href="<?=$domain?>/../financement" class="underline <?php if($page == 'financement'){echo 'active';} ?>">Financement</a></li>
-					<li class="linko"><a href="<?=$domain?>/../contact" class="underline <?php if($page == 'contact'){echo 'active';} ?>">Contact</a></li>
-					<li class="linko"><a href="<?=$domain?>/../forum" class="underline <?php if($page == 'forum'){echo 'active';} ?>">Forum</a></li>
+					<li class="linko"><a href="<?=$domain?>/../formations.php" class="underline <?php if($page == 'formations'){echo 'active';} ?>">Nos formations</a></li>
+					<li class="linko"><a href="<?=$domain?>/../prestations.php" class="underline <?php if($page == 'prestations'){echo 'active';} ?>">Nos prestations de conseil</a></li>
+					<li class="linko"><a href="<?=$domain?>/../financement.php" class="underline <?php if($page == 'financement'){echo 'active';} ?>">Financement</a></li>
+					<li class="linko"><a href="<?=$domain?>/../contact.php" class="underline <?php if($page == 'contact'){echo 'active';} ?>">Contact</a></li>
+					<li class="linko"><a href="<?=$domain?>/../forum.php" class="underline <?php if($page == 'forum'){echo 'active';} ?>">Forum</a></li>
 				</ul>
 			</div>
 		</div>
