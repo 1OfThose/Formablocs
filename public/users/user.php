@@ -8,8 +8,12 @@ $loggedIn = $user->fetch(PDO::FETCH_ASSOC);
 $userFormations = $loggedIn['formations'];
 $userPurchase = $loggedIn['purchased_date'];
 
-$formationsList = substr($userFormations, 0, -2);
-$formationArray = explode(', ', $formationsList);
+if(!empty($userFormations)) {
+	$formationsList = substr($userFormations, 0, -2);
+	$formationArray = explode(', ', $formationsList);
+} else {
+	$formationArray = '';
+}
 
 $formationsDate = substr($userPurchase, 0, -2);
 $dateArray = explode(', ', $formationsDate);
@@ -69,7 +73,7 @@ require_once (__DIR__ . '/../includes/header.php');
 		<div class="mes-formations-container">
 			<h1>Mes formations et accompagnements</h1>
 
-			<?php if(!empty($formationArray) && !empty($dateArray)) {?>
+			<?php if(!empty($formationArray)) {?>
 
 				<div class="mes-formations-list">
 
