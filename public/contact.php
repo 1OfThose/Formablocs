@@ -185,6 +185,6 @@ require_once (__DIR__ . '/includes/header.php');
 </section>
 <?php
 
-require_once (__DIR__ . '/includes/footer');
+require_once (__DIR__ . '/includes/footer.php');
 
 ?>

@@ -205,6 +205,6 @@ Signature du consommateur</p>
 </section>
 <?php
 
-require_once (__DIR__ . '/includes/footer');
+require_once (__DIR__ . '/includes/footer.php');
 
 ?>

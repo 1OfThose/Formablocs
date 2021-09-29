@@ -113,6 +113,6 @@ Si les parties n'arrivent pas à résoudre un litige à l'amiable, le litige s
 </section>
 <?php
 
-require_once (__DIR__ . '/includes/footer');
+require_once (__DIR__ . '/includes/footer.php');
 
 ?>

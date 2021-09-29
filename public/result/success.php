@@ -1,7 +1,7 @@
 <?php
 
-require_once (__DIR__ . '/../db/global_db');
-require '../../vendor/autoload';
+require_once (__DIR__ . '/../db/global_db.php');
+require '../../vendor/autoload.php';
 
 $dotenv = Dotenv\Dotenv::createMutable(__DIR__ . '/../../');
 $dotenv->load();
@@ -51,7 +51,7 @@ if(!in_array($priceID, $array_formation)){
 
 <?php
 $page = 'succes';
-require_once (__DIR__ . '/../includes/header');
+require_once (__DIR__ . '/../includes/header.php');
 
 ?>
 
@@ -79,6 +79,6 @@ require_once (__DIR__ . '/../includes/header');
 
 <?php
 
-require_once (__DIR__ . '/../includes/footer');
+require_once (__DIR__ . '/../includes/footer.php');
 
 ?>
