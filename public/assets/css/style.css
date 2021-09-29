@@ -1636,6 +1636,11 @@ header {
 	font-size: 2.2em;
 }
 
+.vide-formation {
+	margin: 40px 0;
+	font-size: 1.2em;
+}
+
 .mes-formations-list {
 	width: 100%;
 	display: flex;
@@ -1671,6 +1676,10 @@ header {
 	font-size: 1.3em;
 	font-weight: 300;
 	margin-top: 10px;
+}
+
+.mes-formations-card-text {
+	max-width: 80%;
 }
 
 .mes-formations-card-picto {

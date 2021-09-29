@@ -14,18 +14,8 @@ $formationArray = explode(', ', $formationsList);
 $formationsDate = substr($userPurchase, 0, -2);
 $dateArray = explode(', ', $formationsDate);
 
-$objetFormations = (object) $formationArray;
-$objetDate = (object) $dateArray;
+$index = 0;
 
-foreach ($formationArray as $price_f) {
-    $nomFormation = $pdo->query("SELECT * FROM toutes_formations WHERE price_id = \"$price_f\"");
-	$form = $nomFormation->fetchall(PDO::FETCH_ASSOC);
-	$name = $form[0]['formation'];
-	$picto = $form[0]['picto'];
-}
-foreach ($dateArray as $dateOnly) {
-	$dateOnly = $dateOnly;
-}
 ?>
 
 <?php
@@ -78,23 +68,43 @@ require_once (__DIR__ . '/../includes/header.php');
 	<div class="container">
 		<div class="mes-formations-container">
 			<h1>Mes formations et accompagnements</h1>
-			<?php if(!empty($formationArray)) {?>
-			<div class="mes-formations-list">
 
-				<?php foreach($formationArray as $formation) {?>
+			<?php if(!empty($formationArray) && !empty($dateArray)) {?>
 
-					<div class="mes-formations-card">
-						<div class="mes-formations-card-text">
-							<h3><?=$name?></h3>
-							<p>Commencée le : <?=$dateOnly?></p>
+				<div class="mes-formations-list">
+
+					<?php foreach($formationArray as $price_f) 
+					{ 	
+
+						$nomFormation = $pdo->query("SELECT * FROM toutes_formations WHERE price_id = \"$price_f\"");
+						$form = $nomFormation->fetchall(PDO::FETCH_ASSOC);
+					
+						$name = $form[0]['formation'];
+						$picto = $form[0]['picto'];
+						
+					?>
+
+						<div class="mes-formations-card">
+							<div class="mes-formations-card-text">
+								<h3><?=$name?></h3>
+
+								<p>Commencée le : <?=$dateArray[$index]?></p>
+
+							</div>
+							<div class="mes-formations-card-picto">
+								<img src="<?=$domain?>/icons/<?=$picto?>" alt="">
+							</div>
 						</div>
- 						<div class="mes-formations-card-picto">
-							<img src="<?=$domain?>/icons/<?=$picto?>" alt="">
-						</div>
-					</div>
 
-				<?php } } ?>
-			</div>
+					<?php $index++; }?>
+				</div>
+
+			<?php } else { ?>
+
+				<p class="vide-formation">Vous n'avez aucune formation :(</p>
+			
+			<?php } ?>
+
 		</div>
 	</div>
 </section>
