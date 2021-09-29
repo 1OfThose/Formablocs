@@ -2174,7 +2174,7 @@ header {
 .finance-carousel-container {
 	width: 100%;
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: center;
 }
 

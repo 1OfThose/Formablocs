@@ -69,7 +69,7 @@ require_once (__DIR__ . '/../includes/header.php');
 				<h1>Merci beaucoup pour votre achat !</h1>
 				<h4>Un reçu vous a été envoyé sur votre boîte mail.</h4>
 				<p>Si vous n'avez rien reçu, veuillez cliquez <a href="#">ici</a></p>
-				<a href="<?=$domain?>/../index"><button>Retour à l'accueil</button></a>
+				<a href="<?=$domain?>/../index.php"><button>Retour à l'accueil</button></a>
 			</div>
 		</div>
 	</div>

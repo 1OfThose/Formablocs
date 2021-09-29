@@ -157,7 +157,7 @@ require_once (__DIR__ . '/includes/header.php');
 			<div class="forum-bottom">
 				<h1>Vous ne trouvez pas votre bonheur sur le forum ?</h1>
 				<p>Vous souhaitez plus d’information, sur une prestation, une formation ou l’accompagnement proposé par Formablocs, n’hésitez pas à nous contacter. Nous nous engageons à vous répondre sous 2 jours ouvrés. A très bientôt !</p>
-				<a href="<?=$domain?>/../contact" class="red-hover"><button>Nous contacter</button></a>
+				<a href="<?=$domain?>/../contact.php" class="red-hover"><button>Nous contacter</button></a>
 			</div>
 		</div>
 	</div>
