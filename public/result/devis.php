@@ -1,8 +1,8 @@
 
 <?php
 
-require_once (__DIR__ . '/../db/global_db');
-require '../../vendor/autoload';
+require_once (__DIR__ . '/../db/global_db.php');
+require '../../vendor/autoload.php';
 
 $dotenv = Dotenv\Dotenv::createMutable(__DIR__ . '/../../');
 $dotenv->load();
