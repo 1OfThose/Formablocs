@@ -33,7 +33,7 @@ require_once (__DIR__ . '/includes/header.php');
 			</div>
 
 			<div class="finance-carousel">
-				<div class="finance-carousel-container">
+				<div class="finance-carousel-container-2">
 
 					<div class="finance-carousel-left-arrow">
 						<img src="<?=$domain?>/icons/FLECHE GAUCHE BLEUE.svg" alt="Précedent" id="prev-1">
@@ -109,7 +109,7 @@ require_once (__DIR__ . '/includes/header.php');
 
 
 			<div class="finance-carousel">
-				<div class="finance-carousel-container">
+				<div class="finance-carousel-container-2">
 
 					<div class="finance-carousel-left-arrow">
 						<img src="<?=$domain?>/icons/FLECHE GAUCHE BLEUE.svg" alt="Précedent" id="prev-2">
@@ -184,7 +184,7 @@ require_once (__DIR__ . '/includes/header.php');
 			</div>
 
 			<div class="finance-carousel">
-				<div class="finance-carousel-container">
+				<div class="finance-carousel-container-2">
 
 					<div class="finance-carousel-left-arrow">
 						<img src="<?=$domain?>/icons/FLECHE GAUCHE BLEUE.svg" alt="Précedent" id="prev-3">

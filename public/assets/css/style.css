@@ -789,10 +789,11 @@ header {
 }
 
 .categories-formations {
-	width: 100%;
+	width: 80%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	flex-flow: wrap;
 	margin: 80px 0;
 }
 
@@ -2172,6 +2173,13 @@ header {
 }
 
 .finance-carousel-container {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.finance-carousel-container-2 {
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
